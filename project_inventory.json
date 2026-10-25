@@ -1,0 +1,138 @@
+[
+  {
+    "slug": "islamic-relief-ux",
+    "name": "Islamic Relief Canada \u2014 Website Redesign",
+    "section": "Professional Work",
+    "category": "UX & Web",
+    "date": "2021\u20132023",
+    "hero_asset": "irc-full.png"
+  },
+  {
+    "slug": "giving-tuesday",
+    "name": "Giving Tuesday \u2014 Digital Fundraising Campaign",
+    "section": "Professional Work",
+    "category": "Marketing & Analytics",
+    "date": "2022",
+    "hero_asset": "irc-full.png"
+  },
+  {
+    "slug": "mississauga-fire",
+    "name": "City of Mississauga \u2014 Digital Experience & Content",
+    "section": "Professional Work",
+    "category": "UX & Web",
+    "date": "2023\u20132024",
+    "hero_asset": null
+  },
+  {
+    "slug": "youth-gravity",
+    "name": "Youth Gravity \u2014 Identity & Impact the Outcome",
+    "section": "Professional Work",
+    "category": "Brand & Campaign",
+    "date": "2020\u20132021",
+    "hero_asset": "logo yg.png"
+  },
+  {
+    "slug": "arete-surfaces",
+    "name": "Aret\u00e9 Surfaces \u2014 Digital Brand Presence",
+    "section": "Professional Work",
+    "category": "UX & Web",
+    "date": "2024\u20132025",
+    "hero_asset": "an.png"
+  },
+  {
+    "slug": "east-end-arts",
+    "name": "East End Arts \u2014 Mycelial Network",
+    "section": "Professional Work",
+    "category": "Marketing & Content",
+    "date": "2020",
+    "hero_asset": "scene4.jpeg"
+  },
+  {
+    "slug": "utm-fire-campaign",
+    "name": "University of Toronto \u2014 Virtual Fire Safety Campaign",
+    "section": "Professional Work",
+    "category": "Visual Communications",
+    "date": "2019\u20132020",
+    "hero_asset": "fmp1.jpg"
+  },
+  {
+    "slug": "bank-marketing",
+    "name": "Bank Marketing \u2014 Predictive Analysis",
+    "section": "Coursework",
+    "category": "Data Science",
+    "date": "2024",
+    "hero_asset": "project1a.PNG"
+  },
+  {
+    "slug": "aed-analysis",
+    "name": "Toronto Public Access AED Locations",
+    "section": "Coursework",
+    "category": "Data Science",
+    "date": "2026",
+    "hero_asset": "project2.png"
+  },
+  {
+    "slug": "human-centred-ai",
+    "name": "Human-Centred AI \u2014 Explainability & Fairness",
+    "section": "Coursework",
+    "category": "Data Science",
+    "date": "2026",
+    "hero_asset": "project3.png"
+  },
+  {
+    "slug": "motown-web",
+    "name": "Classic Motown \u2014 Web Development Capstone",
+    "section": "Coursework",
+    "category": "Web Development",
+    "date": "2019",
+    "hero_asset": "img1.jpg"
+  },
+  {
+    "slug": "ezdoc",
+    "name": "EzDoc \u2014 Digital Health Venture Concept",
+    "section": "Coursework",
+    "category": "UX & Web",
+    "date": "2020",
+    "hero_asset": "img7.jpg"
+  },
+  {
+    "slug": "lookup",
+    "name": "LOOKUP \u2014 The Electronic Pacifier",
+    "section": "Coursework",
+    "category": "Visual Communications",
+    "date": "2020",
+    "hero_asset": "lookupposter.jpg"
+  },
+  {
+    "slug": "anusual",
+    "name": "ANusual \u2014 Digital Marketing Strategy",
+    "section": "Coursework",
+    "category": "Marketing & Analytics",
+    "date": "2019",
+    "hero_asset": "an.png"
+  },
+  {
+    "slug": "hasid",
+    "name": "HASiD \u2014 Streetwear & Digital Experience",
+    "section": "Passion Projects",
+    "category": "Creative UX",
+    "date": "2021",
+    "hero_asset": "hasidt.png"
+  },
+  {
+    "slug": "roohi-studio",
+    "name": "Roohi Studio \u2014 Art & Illustration",
+    "section": "Creative Work",
+    "category": "Fine Art",
+    "date": "Ongoing",
+    "hero_asset": "portrait1.jpeg"
+  },
+  {
+    "slug": "identity-work",
+    "name": "Branding & Independent Design",
+    "section": "Creative Work",
+    "category": "Graphic Design",
+    "date": "Selected work",
+    "hero_asset": "ring.png"
+  }
+]

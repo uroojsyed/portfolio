@@ -1,0 +1,2050 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+
+/* ========================================
+   ROOT VARIABLES
+======================================== */
+
+:root {
+    --bg: #f7f6f2;
+    --paper: #ffffff;
+    --ink: #22221f;
+    --muted: #676862;
+    --line: #dcdcd4;
+    --accent: #6c6955;
+    --soft: #ecebe6;
+    --max: 1200px;
+}
+
+
+/* ========================================
+   GLOBAL STYLES
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+::selection {
+    background: #d4d0b5;
+}
+
+.wrap {
+    max-width: var(--max);
+    margin: auto;
+    padding: 0 30px;
+}
+
+
+/* ========================================
+   HEADER & NAVIGATION
+======================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: rgba(247, 246, 242, 0.94);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+}
+
+.nav {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.mark {
+    font-weight: 800;
+    font-family: Manrope;
+    letter-spacing: -0.08em;
+    font-size: 24px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.links a {
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: 0.015em;
+    color: #41413c;
+}
+
+.links a:hover,
+.links a[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.mobile-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   TYPOGRAPHY
+======================================== */
+
+.eyebrow {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.21em;
+    color: #777668;
+}
+
+.hero h1,
+h1 {
+    font-family: Manrope, sans-serif;
+    font-weight: 600;
+    font-size: clamp(48px, 6.6vw, 95px);
+    line-height: 1.07;
+    letter-spacing: -0.07em;
+    margin: 16px 0 25px;
+}
+
+.hero h1 em {
+    font-family: Georgia, serif;
+    font-weight: 400;
+}
+
+.lede {
+    max-width: 540px;
+    color: #585954;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   HOMEPAGE HERO
+======================================== */
+
+.hero {
+    padding: 78px 0 84px;
+    border-bottom: 1px solid var(--line);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.12fr 0.88fr;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* ========================================
+   ANIMATED SIGNATURE
+======================================== */
+
+.signature-wrap {
+    min-height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signature-wrap svg {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.signature-wrap svg path {
+    fill: none;
+    stroke: #2e302b;
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* ========================================
+   HOMEPAGE SIGNATURE LAYOUT
+======================================== */
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 36px;
+}
+
+.signature-wrap {
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: visible;
+}
+
+.signature-wrap svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+/* Tablet and Mobile */
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .signature-wrap {
+        width: 100%;
+        max-width: none;
+        min-height: 0;
+        margin: 0;
+        justify-content: flex-start;
+    }
+
+    .signature-wrap svg {
+        width: 100%;
+        max-width: 550px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-grid {
+        gap: 24px;
+    }
+
+    .signature-wrap {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .signature-wrap svg {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/* ----------------------------------------
+   FIRST NAME
+---------------------------------------- */
+
+.signature-wrap svg .stroke-u {
+    stroke-dasharray: 645;
+    stroke-dashoffset: 645;
+    animation: write 1.5s linear forwards;
+    animation-delay: 0s;
+}
+
+.signature-wrap svg .stroke-j {
+    stroke-dasharray: 750;
+    stroke-dashoffset: 750;
+    animation: write 1.5s linear forwards;
+    animation-delay: 1.5s;
+}
+
+
+/* ----------------------------------------
+   LAST NAME
+---------------------------------------- */
+
+.signature-wrap svg .stroke-s {
+    stroke-dasharray: 1530;
+    stroke-dashoffset: 1530;
+    animation: write 1s linear forwards;
+    animation-delay: 3s;
+}
+
+.signature-wrap svg .stroke-y {
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    animation: write 1s linear forwards;
+    animation-delay: 4s;
+}
+
+.signature-wrap svg .stroke-d {
+    stroke-dasharray: 530;
+    stroke-dashoffset: 530;
+    animation: write 1.5s linear forwards;
+    animation-delay: 5s;
+}
+
+.signature-wrap svg .stroke-a {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: write 1s linear forwards;
+    animation-delay: 6.5s;
+}
+
+
+/* ----------------------------------------
+   ARROW
+   Draws after the full name
+---------------------------------------- */
+
+.signature-wrap svg .stroke-end {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 80;
+    animation: write 0.35s linear forwards;
+    animation-delay: 7.5s;
+}
+
+
+/* ----------------------------------------
+   DOTS
+   Appear one by one after arrow
+---------------------------------------- */
+
+.signature-wrap svg .dot-1,
+.signature-wrap svg .dot-2,
+.signature-wrap svg .dot-3 {
+    fill: #2e302b;
+    stroke: none;
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: dotPop 0.25s ease forwards;
+}
+
+
+/* First Dot */
+
+.signature-wrap svg .dot-1 {
+    animation-delay: 7.95s;
+}
+
+
+/* Second Dot */
+
+.signature-wrap svg .dot-2 {
+    animation-delay: 8.2s;
+}
+
+
+/* Third Dot */
+
+.signature-wrap svg .dot-3 {
+    animation-delay: 8.45s;
+}
+
+
+/* ----------------------------------------
+   SIGNATURE KEYFRAMES
+---------------------------------------- */
+
+@keyframes write {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dotPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--ink);
+    padding: 13px 20px;
+    border-radius: 2px;
+    background: var(--ink);
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--ink);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--ink);
+}
+
+.btn-outline:hover {
+    background: var(--ink);
+    color: white;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 27px;
+}
+
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+.section {
+    padding: 84px 0;
+}
+
+.section + .section {
+    border-top: 1px solid var(--line);
+}
+
+.section-head {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.section h2,
+.page-title {
+    font-family: Manrope;
+    font-weight: 600;
+    letter-spacing: -0.055em;
+    font-size: clamp(32px, 4vw, 54px);
+    line-height: 1.12;
+    margin: 8px 0;
+}
+
+.section-intro {
+    max-width: 680px;
+    color: var(--muted);
+}
+
+.text-link {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   PROJECT CARDS
+======================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--line);
+    transition: transform 0.25s, box-shadow 0.25s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px #14141413;
+}
+
+.thumb {
+    aspect-ratio: 1.38;
+    background: #ecece6;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.card:hover .thumb img {
+    transform: scale(1.05);
+}
+
+.card-copy {
+    padding: 22px;
+}
+
+.meta {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #77786f;
+    font-weight: 700;
+}
+
+.card h3 {
+    font-family: Manrope;
+    letter-spacing: -0.035em;
+    font-size: 20px;
+    line-height: 1.26;
+    margin: 9px 0;
+}
+
+.card p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* ========================================
+   FEATURED SECTION
+======================================== */
+
+.feature {
+    background: #e8e7df;
+    padding: 64px 0;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.feature p {
+    color: #55564f;
+}
+
+.mini-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.mini-stats div {
+    border-top: 1px solid #aaa99c;
+    padding-top: 15px;
+}
+
+.mini-stats strong {
+    display: block;
+    font-family: Manrope;
+    font-size: 29px;
+    letter-spacing: -0.04em;
+}
+
+.mini-stats span {
+    font-size: 12px;
+    color: #66685e;
+}
+
+
+/* ========================================
+   PAGE HEADERS
+======================================== */
+
+.page-top {
+    padding: 70px 0 40px;
+}
+
+.page-top .page-title {
+    max-width: 890px;
+}
+
+.page-top p {
+    max-width: 700px;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+
+/* ========================================
+   PROJECT FILTERS
+======================================== */
+
+.filterbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.filter {
+    background: transparent;
+    border: 1px solid #c6c5bb;
+    border-radius: 100px;
+    padding: 9px 17px;
+    cursor: pointer;
+    color: #555;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.filter.active,
+.filter:hover {
+    background: #282823;
+    color: white;
+    border-color: #282823;
+}
+
+.all-grid {
+    padding-bottom: 85px;
+}
+
+.subsection-heading {
+    margin: 35px 0 18px;
+    font-size: 23px;
+    font-family: Manrope;
+    letter-spacing: -0.045em;
+}
+
+
+/* ========================================
+   PROJECT CASE STUDIES
+======================================== */
+
+.article {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 60px 30px 110px;
+}
+
+.article h1 {
+    font-size: clamp(42px, 5vw, 72px);
+}
+
+.article-lede {
+    font-size: 20px;
+    color: #60615c;
+    max-width: 750px;
+}
+
+.article-head {
+    margin-bottom: 42px;
+}
+
+.article-hero {
+    width: 100%;
+    max-height: 520px;
+    object-fit: contain;
+    background: #e9e9e2;
+    padding: 28px;
+    margin: 30px 0 45px;
+}
+
+.article h2 {
+    font-family: Manrope;
+    font-size: 27px;
+    letter-spacing: -0.045em;
+    margin-top: 45px;
+}
+
+.article p {
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.article li {
+    margin: 11px 0;
+    line-height: 1.75;
+}
+
+
+/* ========================================
+   TAGS
+======================================== */
+
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 21px;
+}
+
+.tag {
+    padding: 6px 10px;
+    background: #e9e9e2;
+    color: #55564d;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+
+/* ========================================
+   IMAGE GRIDS
+======================================== */
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+    margin: 20px 0;
+}
+
+.img-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background: #eaeae6;
+    padding: 10px;
+    cursor: zoom-in;
+}
+
+
+/* ========================================
+   NOTES
+======================================== */
+
+.note {
+    border-left: 3px solid #a7a28b;
+    padding: 13px 20px;
+    background: #eeede7;
+    color: #454640;
+}
+
+
+/* ========================================
+   ABOUT PAGE
+======================================== */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+}
+
+.timeline {
+    border-left: 1px solid var(--line);
+    padding-left: 27px;
+}
+
+.timeline-item {
+    margin-bottom: 27px;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 8px;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #777663;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-family: Manrope;
+    letter-spacing: -0.035em;
+}
+
+.timeline-item p {
+    margin: 4px 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* ========================================
+   ART GALLERY
+======================================== */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    cursor: zoom-in;
+    background: #e6e4de;
+}
+
+
+/* ========================================
+   SHOP - COMING SOON
+======================================== */
+
+.shop-pending {
+    padding: 55px;
+    border: 1px solid var(--line);
+    text-align: center;
+    background: #ecebe6;
+    margin-top: 48px;
+}
+
+.shop-pending h3 {
+    font-size: 32px;
+    font-family: Manrope;
+    letter-spacing: -0.04em;
+    margin: 0;
+}
+
+.shop-pending p {
+    max-width: 560px;
+    margin: 12px auto;
+}
+
+
+
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    border-top: 1px solid var(--line);
+    padding: 45px 0;
+    color: #686960;
+    font-size: 13px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+
+/* ========================================
+   IMAGE MODAL
+======================================== */
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: #090909e8;
+    z-index: 90;
+    display: none;
+    place-items: center;
+    padding: 40px;
+}
+
+.modal.open {
+    display: grid;
+}
+
+.modal img {
+    max-width: 95vw;
+    max-height: 88vh;
+    object-fit: contain;
+}
+
+.modal button {
+    position: absolute;
+    top: 14px;
+    right: 22px;
+    background: transparent;
+    color: white;
+    border: 0;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   ADDITIONAL LAYOUTS
+======================================== */
+
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+}
+
+.pill {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    border: 1px solid #b8b8ad;
+    padding: 5px 10px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.noimg {
+    font-size: 12px;
+    text-align: center;
+    color: #898a82;
+    padding: 20px;
+}
+
+.no-motion {
+    animation: none !important;
+}
+
+
+/* ========================================
+   PROJECT COVER PLACEHOLDERS
+======================================== */
+
+.project-cover-text {
+    background: #e7e5db;
+    padding: 80px 30px;
+    text-align: center;
+    font-size: clamp(26px, 4vw, 48px);
+    font-weight: 600;
+    letter-spacing: -0.045em;
+    margin: 30px 0 45px;
+}
+
+.project-cover-text span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 16px;
+    color: #666;
+}
+
+.municipal-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dedfd6;
+    color: #555b50;
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    font-weight: 800;
+    text-align: center;
+    padding: 12px;
+}
+
+
+
+/* ========================================
+   HASID — INTERACTIVE PROTOTYPE VIDEOS
+======================================== */
+
+.prototype-videos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+    margin: 25px 0 40px;
+}
+
+
+/* ========================================
+   VIDEO STYLING
+======================================== */
+
+.prototype-videos video {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 420px;
+
+    flex: 0 1 auto;
+
+    object-fit: contain;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .prototype-videos {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin: 20px 0 35px;
+    }
+
+    .prototype-videos video {
+        width: auto;
+        height: auto;
+
+        max-width: 100%;
+        max-height: 500px;
+    }
+
+}
+
+
+
+
+/* ========================================
+   ROOHI STUDIO
+======================================== */
+
+.section h2.roohi-heading {
+    font-family: 'Hurricane', cursive;
+    font-size: clamp(90px, 12vw, 160px);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.2;
+    text-transform: lowercase;
+    margin: 0 0 20px;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+    .section h2.roohi-heading {
+        font-size: clamp(75px, 16vw, 110px);
+    }
+}
+
+
+
+/* ========================================
+   FIGMA INTERACTIVE EMBEDS
+======================================== */
+
+.figma-project {
+    width: 100%;
+    margin: 35px 0 55px;
+}
+
+.figma-project h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    margin-bottom: 18px;
+}
+
+
+/* Full Width Figma Viewer */
+
+.figma-embed {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background: #e9e9e2;
+    border: 1px solid var(--line);
+    overflow: hidden;
+}
+
+.figma-embed iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .figma-embed {
+        height: 550px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .figma-project {
+        margin: 25px 0 40px;
+    }
+
+    .figma-embed {
+        height: 500px;
+    }
+}
+
+
+/* ========================================
+   CAMPAIGN CASE STUDY
+======================================== */
+
+/* Performance Results */
+
+.campaign-results {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.campaign-result {
+    background: #ecebe6;
+    border: 1px solid var(--line);
+    padding: 30px;
+}
+
+.campaign-result strong {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(34px, 4vw, 52px);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1.15;
+    margin-bottom: 10px;
+}
+
+.campaign-result span {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.campaign-result p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 10px 0 0;
+}
+
+
+/* ========================================
+   PROJECT OUTPUT IMAGES
+======================================== */
+
+.case-visual {
+    margin: 30px 0 45px;
+}
+
+.case-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--line);
+    background: #e9e9e2;
+}
+
+.case-visual figcaption {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+
+/* ========================================
+   GENIALLY PRESENTATION EMBED
+======================================== */
+
+.genially-embed {
+    width: 100%;
+    height: 650px;
+    margin: 25px 0;
+    background: #e9e9e2;
+    border: 1px solid var(--line);
+    overflow: hidden;
+}
+
+.genially-embed iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* ========================================
+   RESPONSIVE LAYOUT
+======================================== */
+
+@media (max-width: 650px) {
+
+    .campaign-results {
+        grid-template-columns: 1fr;
+    }
+
+    .campaign-result {
+        padding: 25px;
+    }
+
+    .genially-embed {
+        height: 480px;
+    }
+
+}
+
+
+/* ========================================
+   CASE STUDY VISUALS
+======================================== */
+
+.case-visual {
+    width: 100%;
+    margin: 30px 0 45px;
+}
+
+.case-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    cursor: zoom-in;
+}
+
+.case-visual figcaption {
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--muted);
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .case-visual {
+        margin: 25px 0 35px;
+    }
+}
+
+
+/* ========================================
+   USER FLOW IMAGE SIZE
+======================================== */
+
+.userflow-visual {
+    max-width: 550px;
+    margin: 30px auto 45px;
+}
+
+.userflow-visual img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+    .userflow-visual {
+        max-width: 100%;
+        margin: 25px auto 35px;
+    }
+}
+
+
+/* ========================================
+   WHIMSICAL INTERACTIVE EMBED
+======================================== */
+
+.whimsical-embed {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    margin: 25px 0;
+    background: #e9e9e2;
+    border: 1px solid var(--line);
+    overflow: hidden;
+}
+
+.whimsical-embed iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .whimsical-embed {
+        height: 550px;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .whimsical-embed {
+        height: 450px;
+    }
+}
+
+
+/* ========================================
+   YOUTH GRAVITY REPORT EMBED
+======================================== */
+
+.report-embed {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin: 25px 0 20px;
+    background: #e9e9e2;
+    border: 1px solid var(--line);
+    overflow: hidden;
+}
+
+.report-embed iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+    .report-embed {
+        height: 650px;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+    .report-embed {
+        height: 500px;
+    }
+}
+
+
+/* ========================================
+   ROOHI STUDIO — INSTAGRAM GALLERY
+======================================== */
+
+.instagram-gallery {
+    width: 100%;
+    min-height: 350px;
+    margin: 35px 0 30px;
+}
+
+.instagram-gallery > div {
+    width: 100%;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .instagram-gallery {
+        min-height: 250px;
+        margin: 25px 0;
+    }
+
+}
+
+
+/* ========================================
+   ROOHI STUDIO — HANDWRITTEN HEADING
+======================================== */
+
+.page-title.roohi-heading {
+    font-family: 'Hurricane', cursive;
+    font-size: clamp(65px, 9vw, 115px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+    .page-title.roohi-heading {
+        font-size: clamp(55px, 12vw, 85px);
+    }
+
+}
+
+
+
+
+/* ========================================
+   HASID — BRAND CONTAINER
+======================================== */
+
+.hasid {
+    width: 100%;
+    margin: 25px 0 40px;
+    padding: 35px 15px;
+
+    background: transparent;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* ========================================
+   HASID — GLITCH WRAPPER
+======================================== */
+
+.hasid-glitch {
+    position: relative;
+    isolation: isolate;
+
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+
+    animation: hasid-jitter 6s infinite steps(1, end);
+}
+
+
+/* ========================================
+   SHARED SVG STYLING
+======================================== */
+
+.hasid-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+
+/* ========================================
+   ORIGINAL LETTERING
+======================================== */
+
+.hasid-logo-main {
+    position: relative;
+    z-index: 3;
+
+    animation: hasid-break 6s infinite steps(1, end);
+}
+
+
+/* ========================================
+   COLOURED GLITCH LAYERS
+======================================== */
+
+.hasid-logo-cyan,
+.hasid-logo-magenta {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    opacity: 0;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+
+/* CYAN */
+
+.hasid-logo-cyan {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(65%)
+        sepia(90%)
+        saturate(1700%)
+        hue-rotate(140deg);
+
+    animation: hasid-cyan 6s infinite steps(1, end);
+}
+
+
+/* MAGENTA */
+
+.hasid-logo-magenta {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(35%)
+        sepia(90%)
+        saturate(3500%)
+        hue-rotate(310deg);
+
+    animation: hasid-magenta 6s infinite steps(1, end);
+}
+
+
+/* ========================================
+   01 — ENTIRE LOGO JITTER
+======================================== */
+
+@keyframes hasid-jitter {
+
+    0%, 70%, 73%, 82%, 85%, 100% {
+        transform: translate(0, 0) skewX(0);
+    }
+
+    70.5% {
+        transform: translate(-6px, 1px) skewX(-2deg);
+    }
+
+    71% {
+        transform: translate(8px, -2px) skewX(2deg);
+    }
+
+    71.5% {
+        transform: translate(-4px, 2px) skewX(-1deg);
+    }
+
+    72% {
+        transform: translate(5px, 0) skewX(1deg);
+    }
+
+    82.5% {
+        transform: translate(3px, -1px);
+    }
+
+    83% {
+        transform: translate(-7px, 2px) skewX(-2deg);
+    }
+
+    83.5% {
+        transform: translate(4px, 0);
+    }
+
+}
+
+
+/* ========================================
+   02 — ORIGINAL LETTERING BREAK
+======================================== */
+
+@keyframes hasid-break {
+
+    0%, 70%, 73%, 82%, 85%, 100% {
+        clip-path: inset(0 0 0 0);
+        transform: translateX(0);
+    }
+
+    70.5% {
+        clip-path: inset(0 0 48% 0);
+        transform: translateX(-8px);
+    }
+
+    71% {
+        clip-path: inset(40% 0 25% 0);
+        transform: translateX(10px);
+    }
+
+    71.5% {
+        clip-path: inset(65% 0 0 0);
+        transform: translateX(-6px);
+    }
+
+    72% {
+        clip-path: inset(0 0 0 0);
+        transform: translateX(4px);
+    }
+
+    82.5% {
+        clip-path: inset(15% 0 55% 0);
+        transform: translateX(7px);
+    }
+
+    83% {
+        clip-path: inset(52% 0 18% 0);
+        transform: translateX(-9px);
+    }
+
+    83.5% {
+        clip-path: inset(0 0 0 0);
+        transform: translateX(0);
+    }
+
+}
+
+
+/* ========================================
+   03 — CYAN DISTORTION
+======================================== */
+
+@keyframes hasid-cyan {
+
+    0%, 70%, 73%, 82%, 85%, 100% {
+        opacity: 0;
+        transform: translateX(0);
+        clip-path: inset(0);
+    }
+
+    70.5% {
+        opacity: 0.8;
+        transform: translateX(-13px);
+        clip-path: inset(5% 0 68% 0);
+    }
+
+    71% {
+        opacity: 0.9;
+        transform: translateX(12px);
+        clip-path: inset(40% 0 34% 0);
+    }
+
+    71.5% {
+        opacity: 0.75;
+        transform: translateX(-9px);
+        clip-path: inset(70% 0 5% 0);
+    }
+
+    72% {
+        opacity: 0;
+    }
+
+    82.5% {
+        opacity: 0.9;
+        transform: translateX(-12px);
+        clip-path: inset(25% 0 55% 0);
+    }
+
+    83% {
+        opacity: 0.8;
+        transform: translateX(10px);
+        clip-path: inset(62% 0 17% 0);
+    }
+
+    83.5% {
+        opacity: 0;
+    }
+
+}
+
+
+/* ========================================
+   04 — MAGENTA DISTORTION
+======================================== */
+
+@keyframes hasid-magenta {
+
+    0%, 70%, 73%, 82%, 85%, 100% {
+        opacity: 0;
+        transform: translateX(0);
+        clip-path: inset(0);
+    }
+
+    70.5% {
+        opacity: 0.85;
+        transform: translateX(12px);
+        clip-path: inset(62% 0 10% 0);
+    }
+
+    71% {
+        opacity: 0.9;
+        transform: translateX(-14px);
+        clip-path: inset(17% 0 58% 0);
+    }
+
+    71.5% {
+        opacity: 0.8;
+        transform: translateX(8px);
+        clip-path: inset(45% 0 30% 0);
+    }
+
+    72% {
+        opacity: 0;
+    }
+
+    82.5% {
+        opacity: 0.85;
+        transform: translateX(10px);
+        clip-path: inset(68% 0 10% 0);
+    }
+
+    83% {
+        opacity: 0.9;
+        transform: translateX(-12px);
+        clip-path: inset(10% 0 65% 0);
+    }
+
+    83.5% {
+        opacity: 0;
+    }
+
+}
+
+
+/* ========================================
+   HOVER — MORE FREQUENT GLITCH
+======================================== */
+
+.hasid-glitch:hover,
+.hasid-glitch:hover .hasid-logo-main,
+.hasid-glitch:hover .hasid-logo-cyan,
+.hasid-glitch:hover .hasid-logo-magenta {
+    animation-duration: 1.2s;
+}
+
+
+/* ========================================
+   HASID — SUBTITLE
+======================================== */
+
+.hasid-subtitle {
+    margin: 12px 0 0;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+
+    color: var(--muted);
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .hasid {
+        padding: 25px 5px;
+        margin: 20px 0 30px;
+    }
+
+    .hasid-glitch {
+        max-width: 90%;
+    }
+
+    .hasid-subtitle {
+        font-size: 11px;
+        letter-spacing: 0.03em;
+    }
+
+}
+
+
+/* ========================================
+   ACCESSIBILITY — REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hasid-glitch,
+    .hasid-logo-main,
+    .hasid-logo-cyan,
+    .hasid-logo-magenta {
+        animation: none !important;
+        transform: none;
+    }
+
+    .hasid-logo-main {
+        clip-path: none;
+    }
+
+    .hasid-logo-cyan,
+    .hasid-logo-magenta {
+        opacity: 0;
+    }
+
+}
+
+
+/* ========================================
+   AFSANEH — ARABIC FONT
+======================================== */
+
+@font-face {
+    font-family: 'Afsaneh';
+    src: url('Afsaneh Font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ========================================
+   HASID — ARABIC LETTERING
+======================================== */
+
+.hasid-arabic {
+    font-family: 'Afsaneh', serif;
+    font-size: 62px;
+    font-weight: normal;
+    direction: rtl;
+    unicode-bidi: isolate;
+}
+
+
+/* ========================================
+   ABOUT — HEADING & SIGNATURE LAYOUT
+======================================== */
+
+.about-page-top {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.about-intro-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.about-intro-content {
+    min-width: 0;
+}
+
+.about-intro-content .page-title {
+    max-width: 660px;
+}
+
+.about-intro-content > p {
+    max-width: 560px;
+}
+
+
+/* ========================================
+   ABOUT — ANIMATED SVG SIGNATURE
+======================================== */
+
+.about-signature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+}
+
+.about-signature .signature-wrap {
+    width: 100%;
+    max-width: 510px;
+    min-height: 180px;
+    margin: 0;
+}
+
+.about-signature .signature-wrap svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ========================================
+   ABOUT — ANIMATED TIMELINE
+======================================== */
+
+/*
+   The timeline stays visible by default.
+   JavaScript enables animations only when
+   IntersectionObserver is available.
+*/
+
+.about-timeline-motion .about-timeline .timeline-item {
+    opacity: 0;
+    transform: translateY(24px);
+
+    transition:
+        opacity 700ms ease,
+        transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-timeline-motion .about-timeline .timeline-item.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ========================================
+   DATE REVEAL
+======================================== */
+
+.about-timeline-motion .about-timeline .timeline-date {
+    opacity: 0;
+    transform: translateX(-10px);
+
+    transition:
+        opacity 550ms ease 120ms,
+        transform 550ms ease 120ms;
+}
+
+.about-timeline-motion
+.about-timeline
+.timeline-item.is-visible
+.timeline-date {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* ========================================
+   TIMELINE DOT ANIMATION
+======================================== */
+
+.about-timeline .timeline-date::before {
+    transform: scale(1);
+    transform-origin: center;
+
+    transition:
+        transform 450ms ease,
+        opacity 450ms ease;
+}
+
+.about-timeline-motion
+.about-timeline
+.timeline-date::before {
+    transform: scale(0);
+    opacity: 0;
+}
+
+.about-timeline-motion
+.about-timeline
+.timeline-item.is-visible
+.timeline-date::before {
+    transform: scale(1);
+    opacity: 1;
+
+    transition-delay: 150ms;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .about-intro-grid {
+        grid-template-columns: 1fr 0.9fr;
+        gap: 20px;
+    }
+
+    .about-signature .signature-wrap {
+        max-width: 400px;
+        min-height: 130px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .about-page-top {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    .about-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .about-signature {
+        justify-content: flex-start;
+    }
+
+    .about-signature .signature-wrap {
+        max-width: 360px;
+        min-height: 100px;
+        margin: 0;
+    }
+
+}
+
+
+/* ========================================
+   ACCESSIBILITY — REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-timeline-motion .about-timeline .timeline-item,
+    .about-timeline-motion .about-timeline .timeline-date {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .about-timeline-motion
+    .about-timeline
+    .timeline-date::before {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+}
