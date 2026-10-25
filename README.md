@@ -1,14 +1,86 @@
-# Urooj Syed — Portfolio Rebuild
+# Urooj Syed | Personal Portfolio
 
-Responsive static multipage portfolio; open `index.html` to browse. Designed for GitHub Pages.
+A personal portfolio showcasing my professional work, academic projects, creative practice, and independent projects.
 
-## Publish
-Upload the contents of this folder to the root of a new GitHub Pages branch or repository, preserving the `projects/` directory. No build tools required.
+I'm a Master of Information student at the University of Toronto, focusing on Human-Centred Data Science. My background spans digital communications, website design, web development, and digital strategy. I'm interested in using data to identify trends, evaluate programs, inform decisions, and create meaningful improvements for communities.
 
-## Asset notes
-Original images are currently referenced by public URLs from `uroojsyed/uroojsyed` on the `gh-pages` branch. This is intentional because the full GitHub repository could not be downloaded in the authoring environment. For a self-contained site, copy the original `images/` folder into this project and replace `https://raw.githubusercontent.com/uroojsyed/uroojsyed/gh-pages/images/` with `/images/` throughout. Some historic illustrations may require checking filename spelling and case. The latest Genially images are not directly extractable from its transcript; professional project copy uses the Genially text and certain historic images are used as stand-ins.
+This website brings together my multidisciplinary experience and documents my growing work in data analysis and programming.
 
-No changes have been pushed to the user's original repository. The existing SVG signature was copied directly from the supplied HTML. This is a draft ready for content and asset review before going live.
+## Portfolio Sections
 
+### Professional Work
 
-Original GitHub repository images and prototype videos are now included locally under `images/`. The signature animation retains its original SVG paths. This version does not require raw.githubusercontent.com links. The City of Mississauga case study has been separated from the UTM fire safety graphics.
+A collection of projects from my professional experience in digital communications, website development, content management, and digital strategy.
+
+Featured work includes projects involving:
+- Website redesign and development
+- UX/UI design and accessibility improvements
+- Digital fundraising and campaign analytics
+- Website management and content strategy
+- Digital experience improvements
+
+### Coursework
+
+Academic projects exploring programming, data analysis, and human-centred approaches to technology.
+
+### Creative
+
+A collection of visual art and creative projects developed through my independent practice, Roohi Studio.
+
+### Passion Projects
+
+Personal projects driven by curiosity, experimentation, and creative problem-solving.
+
+### About
+
+An overview of my academic background, professional experience, interests, and career direction.
+
+## Built With
+
+This website was designed and developed using:
+
+- HTML5
+- CSS3
+- JavaScript
+- Visual Studio Code
+- Git & GitHub
+- GitHub Pages
+
+The website features a responsive, multi-page layout with custom styling and interactive elements.
+
+## Project Structure
+
+```text
+urooj_portfolio/
+├── index.html
+├── work.html
+├── coursework.html
+├── creative.html
+├── passion.html
+├── about.html
+├── style.css
+├── site.js
+├── images/
+└── projects/
+```
+
+## Featured Data Analysis Project
+
+### Toronto Public Access AED Locations
+
+A Python and Pandas analysis of the City of Toronto's 2025 Automated External Defibrillator (AED) Locations dataset.
+
+The project explores data completeness, equipment distribution, and location patterns using publicly available municipal data.
+
+[View Project Repository](https://github.com/uroojsyed/AED-2025-Data-Analysis)
+
+## Connect
+
+- [LinkedIn](https://www.linkedin.com/in/uroojabidsyed)
+- [GitHub](https://github.com/uroojsyed)
+- [Roohi Studio](https://www.instagram.com/roohistudio/)
+- Email: urooj.syed@mail.utoronto.ca
+
+---
+
+© 2026 Urooj Syed. Designed with intention.
