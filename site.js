@@ -1,40 +1,120 @@
+/* ==========================================================================
+   SITE JAVASCRIPT
+   Shared by every page on the site.
 
-/* ========================================
-   MOBILE NAVIGATION
-======================================== */
+   CONTENTS
+   01. Mobile navigation
+   02. Project filters
+   03. Project image modal
+   04. Project image fallback
+   ========================================================================== */
 
-document.querySelector('.mobile-toggle')?.addEventListener('click', () => {
 
-    let n = document.querySelector('.links');
+/* ==========================================================================
+   01. MOBILE NAVIGATION
+   Opens and closes the dropdown menu on small screens.
+   ========================================================================== */
 
-    const is = n.classList.toggle('show');
+const mobileToggle = document.querySelector('.mobile-toggle');
+const navLinks = document.querySelector('.links');
 
-    document
-        .querySelector('.mobile-toggle')
-        .setAttribute('aria-expanded', String(is));
+// Breakpoint where the full desktop navigation is restored.
+// Keep in sync with the navigation media query in style.css.
+const DESKTOP_NAV_MIN_WIDTH = 901;
+
+
+/* ----------------------------------------
+   Open / close helper
+---------------------------------------- */
+
+function setMenuOpen(isOpen) {
+
+    if (!mobileToggle || !navLinks) {
+        return;
+    }
+
+    navLinks.classList.toggle('show', isOpen);
+
+    mobileToggle.setAttribute('aria-expanded', String(isOpen));
+
+    // Swap the menu icon between hamburger and close.
+    mobileToggle.textContent = isOpen ? '✕' : '☰';
+
+}
+
+
+/* ----------------------------------------
+   Toggle button
+---------------------------------------- */
+
+mobileToggle?.addEventListener('click', () => {
+
+    setMenuOpen(!navLinks.classList.contains('show'));
 
 });
 
 
-/* ========================================
-   PROJECT FILTERS
-======================================== */
+/* ----------------------------------------
+   Close the menu when a link is tapped
+---------------------------------------- */
 
-document.querySelectorAll('[data-filter]').forEach(b => {
+navLinks?.addEventListener('click', e => {
 
-    b.addEventListener('click', () => {
+    if (e.target.closest('a')) {
+        setMenuOpen(false);
+    }
 
-        document.querySelectorAll('[data-filter]').forEach(x => {
-            x.classList.remove('active');
+});
+
+
+/* ----------------------------------------
+   Close the menu with the Escape key
+---------------------------------------- */
+
+document.addEventListener('keydown', e => {
+
+    if (e.key === 'Escape') {
+        setMenuOpen(false);
+    }
+
+});
+
+
+/* ----------------------------------------
+   Reset the menu when resizing to desktop
+---------------------------------------- */
+
+window.addEventListener('resize', () => {
+
+    if (window.innerWidth >= DESKTOP_NAV_MIN_WIDTH) {
+        setMenuOpen(false);
+    }
+
+});
+
+
+/* ==========================================================================
+   02. PROJECT FILTERS
+   Filters project cards by category on the work / coursework pages.
+   ========================================================================== */
+
+document.querySelectorAll('[data-filter]').forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        // Update the active button.
+        document.querySelectorAll('[data-filter]').forEach(other => {
+            other.classList.remove('active');
         });
 
-        b.classList.add('active');
+        button.classList.add('active');
 
-        document.querySelectorAll('[data-group]').forEach(c => {
+        // Show or hide cards to match the selected filter.
+        document.querySelectorAll('[data-group]').forEach(card => {
 
-            c.hidden =
-                b.dataset.filter !== 'All' &&
-                c.dataset.group !== b.dataset.filter;
+            card.hidden =
+                button.dataset.filter !== 'All' &&
+                card.dataset.group !== button.dataset.filter;
 
         });
 
@@ -43,19 +123,25 @@ document.querySelectorAll('[data-filter]').forEach(b => {
 });
 
 
-/* ========================================
-   PROJECT IMAGE MODAL
-======================================== */
+/* ==========================================================================
+   03. PROJECT IMAGE MODAL
+   Click an image to view it full screen.
+   ========================================================================== */
 
-let modal = document.querySelector('.modal');
+const modal = document.querySelector('.modal');
 
-document.querySelectorAll('[data-zoom]').forEach(i => {
 
-    i.addEventListener('click', () => {
+/* ----------------------------------------
+   Open the modal
+---------------------------------------- */
 
-        modal.querySelector('img').src = i.src;
+document.querySelectorAll('[data-zoom]').forEach(image => {
 
-        modal.querySelector('img').alt = i.alt;
+    image.addEventListener('click', () => {
+
+        modal.querySelector('img').src = image.src;
+
+        modal.querySelector('img').alt = image.alt;
 
         modal.classList.add('open');
 
@@ -66,9 +152,9 @@ document.querySelectorAll('[data-zoom]').forEach(i => {
 });
 
 
-/* ========================================
-   CLOSE IMAGE MODAL — BUTTON
-======================================== */
+/* ----------------------------------------
+   Close — button
+---------------------------------------- */
 
 document.querySelector('.modal button')?.addEventListener('click', () => {
 
@@ -77,168 +163,42 @@ document.querySelector('.modal button')?.addEventListener('click', () => {
 });
 
 
-/* ========================================
-   CLOSE IMAGE MODAL — CLICK OUTSIDE
-======================================== */
+/* ----------------------------------------
+   Close — click outside the image
+---------------------------------------- */
 
 modal?.addEventListener('click', e => {
 
     if (e.target === modal) {
-
         modal.classList.remove('open');
-
     }
 
 });
 
 
-/* ========================================
-   CLOSE IMAGE MODAL — ESCAPE KEY
-======================================== */
+/* ----------------------------------------
+   Close — Escape key
+---------------------------------------- */
 
 document.addEventListener('keydown', e => {
 
     if (e.key === 'Escape') {
-
         modal?.classList.remove('open');
-
     }
 
 });
 
 
-/* ========================================
-   PROJECT IMAGE FALLBACK
-======================================== */
+/* ==========================================================================
+   04. PROJECT IMAGE FALLBACK
+   Replaces a missing project image with a short message.
+   ========================================================================== */
 
-document.querySelectorAll('img[data-fallback]').forEach(i => {
+document.querySelectorAll('img[data-fallback]').forEach(image => {
 
-    i.addEventListener('error', () => {
+    image.addEventListener('error', () => {
 
-        i.parentElement.innerHTML =
-            '<span class="noimg">Project image available in the original GitHub repository</span>';
-
-    });
-
-});
-
-/* ========================================
-   MOBILE NAVIGATION
-======================================== */
-
-document.querySelector('.mobile-toggle')?.addEventListener('click', () => {
-
-    let n = document.querySelector('.links');
-
-    const is = n.classList.toggle('show');
-
-    document
-        .querySelector('.mobile-toggle')
-        .setAttribute('aria-expanded', String(is));
-
-});
-
-
-/* ========================================
-   PROJECT FILTERS
-======================================== */
-
-document.querySelectorAll('[data-filter]').forEach(b => {
-
-    b.addEventListener('click', () => {
-
-        document.querySelectorAll('[data-filter]').forEach(x => {
-            x.classList.remove('active');
-        });
-
-        b.classList.add('active');
-
-        document.querySelectorAll('[data-group]').forEach(c => {
-
-            c.hidden =
-                b.dataset.filter !== 'All' &&
-                c.dataset.group !== b.dataset.filter;
-
-        });
-
-    });
-
-});
-
-
-/* ========================================
-   PROJECT IMAGE MODAL
-======================================== */
-
-let modal = document.querySelector('.modal');
-
-document.querySelectorAll('[data-zoom]').forEach(i => {
-
-    i.addEventListener('click', () => {
-
-        modal.querySelector('img').src = i.src;
-
-        modal.querySelector('img').alt = i.alt;
-
-        modal.classList.add('open');
-
-        modal.querySelector('button').focus();
-
-    });
-
-});
-
-
-/* ========================================
-   CLOSE IMAGE MODAL — BUTTON
-======================================== */
-
-document.querySelector('.modal button')?.addEventListener('click', () => {
-
-    modal.classList.remove('open');
-
-});
-
-
-/* ========================================
-   CLOSE IMAGE MODAL — CLICK OUTSIDE
-======================================== */
-
-modal?.addEventListener('click', e => {
-
-    if (e.target === modal) {
-
-        modal.classList.remove('open');
-
-    }
-
-});
-
-
-/* ========================================
-   CLOSE IMAGE MODAL — ESCAPE KEY
-======================================== */
-
-document.addEventListener('keydown', e => {
-
-    if (e.key === 'Escape') {
-
-        modal?.classList.remove('open');
-
-    }
-
-});
-
-
-/* ========================================
-   PROJECT IMAGE FALLBACK
-======================================== */
-
-document.querySelectorAll('img[data-fallback]').forEach(i => {
-
-    i.addEventListener('error', () => {
-
-        i.parentElement.innerHTML =
+        image.parentElement.innerHTML =
             '<span class="noimg">Project coming soon</span>';
 
     });

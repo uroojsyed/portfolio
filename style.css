@@ -1,3 +1,16 @@
+/* ==========================================================================
+   UROOJ SYED PORTFOLIO — MAIN STYLESHEET
+
+   The desktop design lives in the sections below.
+   All mobile and tablet rules are grouped together in the
+   "RESPONSIVE LAYOUT — MOBILE & TABLET" section at the very end.
+
+   BREAKPOINTS
+   - 900px and below : tablet  (navigation collapses, grids stack)
+   - 650px and below : mobile  (single column, tighter spacing)
+   - 480px and below : small phones (buttons go full width)
+   ========================================================================== */
+
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
@@ -845,9 +858,6 @@ h1 {
 }
 
 
-
-
-
 /* ========================================
    FOOTER
 ======================================== */
@@ -979,7 +989,6 @@ h1 {
 }
 
 
-
 /* ========================================
    HASID — INTERACTIVE PROTOTYPE VIDEOS
 ======================================== */
@@ -1043,8 +1052,6 @@ h1 {
 }
 
 
-
-
 /* ========================================
    ROOHI STUDIO
 ======================================== */
@@ -1070,7 +1077,6 @@ h1 {
         font-size: clamp(75px, 16vw, 110px);
     }
 }
-
 
 
 /* ========================================
@@ -1435,8 +1441,6 @@ h1 {
     }
 
 }
-
-
 
 
 /* ========================================
@@ -2045,6 +2049,497 @@ h1 {
         opacity: 1;
         transform: none;
         transition: none;
+    }
+
+}
+
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT — MOBILE & TABLET
+   Everything above this line is the desktop design and is unchanged.
+   ========================================================================== */
+
+
+/* ========================================
+   ALL SCREENS — SAFETY RULES
+======================================== */
+
+/* Stop iOS from enlarging text when the phone is rotated. */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Media and embeds can never be wider than their container. */
+
+video,
+iframe,
+svg {
+    max-width: 100%;
+}
+
+
+/* ==========================================================================
+   NARROW WINDOWS — 1260px AND BELOW
+   ========================================================================== */
+
+@media (max-width: 1260px) {
+
+    /*
+       .page-top is used together with .wrap, but its padding shorthand
+       removes the side padding that .wrap provides. Once the window is
+       narrower than the 1200px content width, restore that side padding
+       so page introductions never touch the edge of the screen.
+    */
+
+    .page-top {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+}
+
+
+/* ==========================================================================
+   TABLET — 900px AND BELOW
+   ========================================================================== */
+
+@media (max-width: 900px) {
+
+
+    /* ----------------------------------------
+       HEADER & NAVIGATION
+       Links collapse into a dropdown menu
+       opened by the hamburger button.
+    ---------------------------------------- */
+
+    .nav {
+        height: 68px;
+    }
+
+    .mobile-toggle {
+        display: block;
+        padding: 6px 4px;
+        line-height: 1;
+        color: var(--ink);
+    }
+
+    .links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 6px 30px 14px;
+        background: rgba(247, 246, 242, 0.98);
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 14px 24px #14141410;
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .links a {
+        padding: 15px 0;
+        font-size: 14px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .links a:last-child {
+        border-bottom: 0;
+    }
+
+    .links a:hover,
+    .links a[aria-current="page"] {
+        text-underline-offset: 6px;
+    }
+
+
+    /* ----------------------------------------
+       HOMEPAGE
+    ---------------------------------------- */
+
+    .hero {
+        padding: 56px 0 60px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature {
+        padding: 52px 0;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+
+    /* ----------------------------------------
+       SECTIONS & PAGE HEADERS
+    ---------------------------------------- */
+
+    .section {
+        padding: 64px 0;
+    }
+
+    .page-top,
+    .about-page-top {
+        padding-top: 56px;
+        padding-bottom: 32px;
+    }
+
+
+    /* ----------------------------------------
+       ABOUT PAGE
+    ---------------------------------------- */
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+
+    /* ----------------------------------------
+       GENERIC TWO-COLUMN LAYOUT
+    ---------------------------------------- */
+
+    .two-col {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+
+    /* ----------------------------------------
+       ART GALLERY
+    ---------------------------------------- */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid img {
+        height: 280px;
+    }
+
+}
+
+
+/* ==========================================================================
+   MOBILE — 650px AND BELOW
+   ========================================================================== */
+
+@media (max-width: 650px) {
+
+
+    /* ----------------------------------------
+       GLOBAL SPACING & TEXT
+    ---------------------------------------- */
+
+    .wrap {
+        padding: 0 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li {
+        overflow-wrap: break-word;
+    }
+
+
+    /* ----------------------------------------
+       HEADER & NAVIGATION
+    ---------------------------------------- */
+
+    .nav {
+        height: 62px;
+    }
+
+    .links {
+        padding: 4px 20px 12px;
+    }
+
+
+    /* ----------------------------------------
+       TYPOGRAPHY
+    ---------------------------------------- */
+
+    .hero h1,
+    h1 {
+        font-size: clamp(38px, 11vw, 52px);
+        margin: 14px 0 20px;
+    }
+
+    .section h2,
+    .page-title {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .lede {
+        font-size: 17px;
+    }
+
+    .page-top p {
+        font-size: 16px;
+    }
+
+
+    /* ----------------------------------------
+       HOMEPAGE HERO
+    ---------------------------------------- */
+
+    .hero {
+        padding: 44px 0 48px;
+    }
+
+    .button-row {
+        margin-top: 22px;
+    }
+
+
+    /* ----------------------------------------
+       SECTIONS & PAGE HEADERS
+    ---------------------------------------- */
+
+    .section {
+        padding: 52px 0;
+    }
+
+    .section-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 24px;
+    }
+
+    .page-top,
+    .about-page-top {
+        padding-top: 44px;
+        padding-bottom: 28px;
+    }
+
+    .all-grid {
+        padding-bottom: 60px;
+    }
+
+    .subsection-heading {
+        margin: 28px 0 16px;
+        font-size: 21px;
+    }
+
+
+    /* ----------------------------------------
+       PROJECT CARDS
+    ---------------------------------------- */
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card-copy {
+        padding: 18px;
+    }
+
+
+    /* ----------------------------------------
+       FEATURED SECTION
+    ---------------------------------------- */
+
+    .feature {
+        padding: 44px 0;
+    }
+
+    .feature-grid {
+        gap: 28px;
+    }
+
+
+    /* ----------------------------------------
+       PROJECT CASE STUDIES
+    ---------------------------------------- */
+
+    .article {
+        padding: 36px 20px 72px;
+    }
+
+    .article h1 {
+        font-size: clamp(30px, 8.5vw, 42px);
+    }
+
+    .article-lede {
+        font-size: 18px;
+    }
+
+    .article-head {
+        margin-bottom: 32px;
+    }
+
+    .article-hero {
+        padding: 14px;
+        margin: 24px 0 34px;
+    }
+
+    .article h2 {
+        font-size: 24px;
+        margin-top: 36px;
+    }
+
+    .project-cover-text {
+        padding: 52px 20px;
+        margin: 24px 0 34px;
+    }
+
+
+    /* ----------------------------------------
+       IMAGE GRIDS
+    ---------------------------------------- */
+
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .img-grid img {
+        height: auto;
+        max-height: 420px;
+    }
+
+
+    /* ----------------------------------------
+       ABOUT PAGE
+    ---------------------------------------- */
+
+    .about-grid {
+        gap: 40px;
+    }
+
+    .timeline {
+        padding-left: 22px;
+    }
+
+    .timeline-item:before {
+        left: -27px;
+    }
+
+
+    /* ----------------------------------------
+       ART GALLERY
+    ---------------------------------------- */
+
+    .gallery-grid {
+        gap: 10px;
+    }
+
+    .gallery-grid img {
+        height: 230px;
+    }
+
+
+    /* ----------------------------------------
+       SHOP - COMING SOON
+    ---------------------------------------- */
+
+    .shop-pending {
+        padding: 36px 22px;
+        margin-top: 34px;
+    }
+
+    .shop-pending h3 {
+        font-size: 26px;
+    }
+
+
+    /* ----------------------------------------
+       HASID — ARABIC LETTERING
+    ---------------------------------------- */
+
+    .hasid-arabic {
+        font-size: 44px;
+    }
+
+
+    /* ----------------------------------------
+       FOOTER
+    ---------------------------------------- */
+
+    .footer {
+        padding: 36px 0;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+
+    /* ----------------------------------------
+       IMAGE MODAL
+    ---------------------------------------- */
+
+    .modal {
+        padding: 16px;
+    }
+
+    .modal button {
+        top: 8px;
+        right: 14px;
+    }
+
+}
+
+
+/* ==========================================================================
+   SMALL PHONES — 480px AND BELOW
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+
+    /* ----------------------------------------
+       BUTTONS
+       Stack neatly at full width.
+    ---------------------------------------- */
+
+    .button-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    /* ----------------------------------------
+       ART GALLERY
+       One image per row.
+    ---------------------------------------- */
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid img {
+        height: 300px;
+    }
+
+
+    /* ----------------------------------------
+       MINI STATS
+    ---------------------------------------- */
+
+    .mini-stats strong {
+        font-size: 25px;
     }
 
 }

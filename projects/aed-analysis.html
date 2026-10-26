@@ -1,506 +1,372 @@
-
-
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f7f6f2" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f7f6f2">
+        <meta
+            name="description"
+            content="Exploring Toronto's public access AED dataset using Python and Pandas. A data analysis project by Urooj Syed."
+        />
 
-    <meta
-        name="description"
-        content="Exploring Toronto's public access AED dataset using Python and Pandas. A data analysis project by Urooj Syed."
-    >
+        <title>Toronto Public Access AED Locations | Urooj Syed</title>
 
-    <title>Toronto Public Access AED Locations | Urooj Syed</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
 
-    <link rel="stylesheet" href="../style.css">
-</head>
+    <body>
+        <!-- HEADER & NAVIGATION -->
 
-<body>
+        <header class="header">
+            <nav class="wrap nav" aria-label="Main navigation">
+                <a class="mark" href="../index.html" aria-label="Urooj Syed home"> u.s. </a>
 
-    <!-- HEADER & NAVIGATION -->
+                <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    ☰
+                </button>
 
-    <header class="header">
+                <div class="links">
+                    <a href="../work.html">Work</a>
+                    <a href="../coursework.html">Coursework</a>
+                    <a href="../creative.html">Creative</a>
+                    <a href="../passion.html">Passion Projects</a>
+                    <a href="../about.html">About</a>
+                </div>
+            </nav>
+        </header>
 
-        <nav class="wrap nav" aria-label="Main navigation">
+        <!-- MAIN CONTENT -->
 
-            <a
-                class="mark"
-                href="../index.html"
-                aria-label="Urooj Syed home"
-            >
-                u.s.
-            </a>
+        <main>
+            <article class="article">
+                <!-- PROJECT HEADER -->
 
-            <button
-                class="mobile-toggle"
-                aria-label="Toggle menu"
-                aria-expanded="false"
-            >
-                ☰
-            </button>
+                <div class="article-head">
+                    <a class="text-link" href="../coursework.html"> ← Back to coursework </a>
 
-            <div class="links">
-                <a href="../work.html">Work</a>
-                <a href="../coursework.html">Coursework</a>
-                <a href="../creative.html">Creative</a>
-                <a href="../passion.html">Passion Projects</a>
-                <a href="../about.html">About</a>
-            </div>
+                    <div class="eyebrow" style="margin-top: 30px">
+                        Coursework / Data Analysis / 2026
+                    </div>
 
-        </nav>
+                    <h1>Toronto Public Access AED Locations</h1>
 
-    </header>
+                    <p class="article-lede">
+                        Exploring public AED distribution and data quality using Python and Pandas.
+                    </p>
 
+                    <div class="tag-row">
+                        <span class="tag">Python</span>
+                        <span class="tag">Pandas</span>
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">Exploratory Analysis</span>
+                        <span class="tag">Open Data</span>
+                    </div>
 
-    <!-- MAIN CONTENT -->
-
-    <main>
-
-        <article class="article">
-
-            <!-- PROJECT HEADER -->
-
-            <div class="article-head">
-
-                <a
-                    class="text-link"
-                    href="../coursework.html"
-                >
-                    ← Back to coursework
-                </a>
-
-                <div
-                    class="eyebrow"
-                    style="margin-top: 30px"
-                >
-                    Coursework / Data Analysis / 2026
+                    <div class="button-row" style="margin-top: 28px">
+                        <a
+                            class="btn"
+                            href="https://github.com/uroojsyed/AED-2025-Data-Analysis"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View GitHub Repository ↗
+                        </a>
+                    </div>
                 </div>
 
-                <h1>
-                    Toronto Public Access AED Locations
-                </h1>
+                <!-- OVERVIEW -->
 
-                <p class="article-lede">
-                    Exploring public AED distribution and data quality
-                    using Python and Pandas.
+                <h2>Overview</h2>
+
+                <p>
+                    Public access Automated External Defibrillators (AEDs) are essential emergency
+                    response devices. Maintaining accurate location and equipment records can
+                    support effective tracking, inspections, and maintenance.
                 </p>
 
-                <div class="tag-row">
-                    <span class="tag">Python</span>
-                    <span class="tag">Pandas</span>
-                    <span class="tag">Data Cleaning</span>
-                    <span class="tag">Exploratory Analysis</span>
-                    <span class="tag">Open Data</span>
-                </div>
+                <p>
+                    For this project, I analyzed the City of Toronto's 2025 AED Locations dataset to
+                    examine how AED records are distributed across organizations, divisions, and
+                    individual sites. I also investigated data quality issues that could affect the
+                    reliability of equipment records.
+                </p>
 
-                <div
-                    class="button-row"
-                    style="margin-top: 28px"
-                >
+                <p>
+                    The project was completed as part of INF1340H – Programming for Data Science at
+                    the University of Toronto.
+                </p>
 
+                <!-- DATASET -->
+
+                <h2>Dataset &amp; tools</h2>
+
+                <p>
+                    The dataset was obtained from the City of Toronto's Open Data portal. It
+                    contains information about publicly accessible AEDs, including organization,
+                    division, site, address, placement location, manufacturer, and model.
+                </p>
+
+                <p>
+                    Using Python and Pandas in Google Colab, I inspected, cleaned, and analyzed the
+                    records to identify patterns in equipment distribution and information
+                    completeness.
+                </p>
+
+                <p>
+                    <a
+                        class="text-link"
+                        href="https://open.toronto.ca/dataset/automatic-external-defibrillators-aed-locations/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View original dataset ↗
+                    </a>
+                </p>
+
+                <!-- DATA CLEANING -->
+
+                <h2>01 / Data cleaning</h2>
+
+                <p>
+                    Before beginning the analysis, I inspected the dataset for missing information,
+                    inconsistent formatting, spelling errors, and duplicate-looking records.
+                </p>
+
+                <p>
+                    I performed several cleaning operations to improve consistency while preserving
+                    records that could represent valid AED units.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Missing information:</strong>
+                        Standardized missing values and "TBD" entries as "Not Provided" in selected
+                        columns.
+                    </li>
+
+                    <li>
+                        <strong>Inconsistent formatting:</strong>
+                        Removed extra spaces and standardized capitalization in city names.
+                    </li>
+
+                    <li>
+                        <strong>Spelling errors:</strong>
+                        Corrected misspelled city names to prevent locations from being counted
+                        separately.
+                    </li>
+
+                    <li>
+                        <strong>Duplicate-looking records:</strong>
+                        Retained identical records because they could represent separate AED units.
+                        Added sequential record IDs to distinguish rows.
+                    </li>
+                </ul>
+
+                <p>
+                    The cleaned dataset was exported as a separate CSV file, preserving the original
+                    dataset for comparison and reproducibility.
+                </p>
+
+                <!-- EXPLORATORY ANALYSIS -->
+
+                <h2>02 / Exploratory data analysis</h2>
+
+                <p>
+                    I conducted six exploratory analyses to better understand AED record
+                    distribution, equipment information, and data completeness.
+                </p>
+
+                <p>
+                    These analyses examined AED counts by division and city, identified common and
+                    unique AED manufacturers, compared records between organizations, and located
+                    records with missing placement information.
+                </p>
+
+                <p>
+                    This initial exploration helped reveal differences in how AED records were
+                    distributed and highlighted data quality issues worth investigating further.
+                </p>
+
+                <!-- HIGHER LEVEL ANALYSIS -->
+
+                <h2>03 / Comparative analysis</h2>
+
+                <h3>Missing placement information by organization</h3>
+
+                <p>
+                    To compare data completeness, I calculated the percentage of AED records with
+                    missing placement information for each organization.
+                </p>
+
+                <p>
+                    Rather than comparing only the number of missing records, I divided those counts
+                    by each organization's total records. This provided a proportional comparison
+                    between the City of Toronto and Safe City Program.
+                </p>
+
+                <p>
+                    The analysis found that the Safe City Program had a higher proportion of records
+                    without placement information, highlighting a potential opportunity to improve
+                    record completeness.
+                </p>
+
+                <h3>AED distribution across individual sites</h3>
+
+                <p>
+                    I calculated the average number of AED records per site and identified locations
+                    exceeding that average.
+                </p>
+
+                <p>
+                    The analysis revealed that certain sites, including TTC stations, had
+                    substantially more AED records than the average location. These concentrations
+                    may be relevant for equipment tracking and record management.
+                </p>
+
+                <!-- KEY FINDINGS -->
+
+                <h2>04 / Key findings</h2>
+
+                <ol>
+                    <li>
+                        <strong>Zoll was the most frequently recorded AED manufacturer.</strong>
+                        Its prevalence provides insight into the equipment represented across the
+                        dataset.
+                    </li>
+
+                    <li>
+                        <strong>Placement data completeness varied between organizations.</strong>
+                        The Safe City Program had a higher proportion of records without specific
+                        placement information.
+                    </li>
+
+                    <li>
+                        <strong>AED records were concentrated at certain sites.</strong>
+                        Some locations, including TTC stations, had above-average record counts.
+                    </li>
+
+                    <li>
+                        <strong>Identical records were not necessarily duplicates.</strong>
+                        Without official device identifiers, identical entries could represent
+                        separate AED units, particularly at mobile locations.
+                    </li>
+                </ol>
+
+                <!-- LIMITATIONS -->
+
+                <h2>05 / Limitations &amp; reflection</h2>
+
+                <p>
+                    A key challenge was determining how to handle records that appeared identical.
+                    Because the dataset did not include unique identifiers for individual AED
+                    devices, removing these records could have excluded legitimate equipment
+                    entries.
+                </p>
+
+                <p>
+                    The dataset also contained incomplete location and placement information.
+                    Additionally, it did not include maintenance histories, device conditions,
+                    inspection statuses, or usage frequency, limiting conclusions about operational
+                    needs and actual accessibility.
+                </p>
+
+                <p>
+                    This project reinforced the importance of understanding the context behind data
+                    quality issues before making cleaning decisions. It also demonstrated how
+                    exploratory analysis can identify patterns and information gaps that may support
+                    more informed public-service record management.
+                </p>
+
+                <!-- PROJECT LINKS -->
+
+                <h2>Explore the project</h2>
+
+                <p>
+                    The GitHub repository contains the Python notebook, original dataset, cleaned
+                    dataset, and project documentation.
+                </p>
+
+                <div class="button-row">
                     <a
                         class="btn"
+                        href="https://github.com/uroojsyed/AED-2025-Data-Analysis/blob/0631f9141d7dfacf95a6df198d1177f91e966cb3/Toronto_AED_2025_Data_Analysis.ipynb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Code on GitHub ↗
+                    </a>
+
+                    <a
+                        class="btn btn-outline"
                         href="https://github.com/uroojsyed/AED-2025-Data-Analysis"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        View GitHub Repository ↗
+                        View Project Files ↗
                     </a>
-
                 </div>
 
+                <!-- BACK TO COURSEWORK -->
+
+                <div class="button-row" style="margin-top: 48px">
+                    <a class="btn btn-outline" href="../coursework.html"> ← More coursework </a>
+                </div>
+            </article>
+        </main>
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+            <div class="wrap footer-row">
+                <div>© 2026 Urooj Syed · Designed with intention.</div>
+
+                <div>
+                    <a
+                        href="https://www.instagram.com/roohistudio/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        @roohistudio
+                    </a>
+
+                    &nbsp; · &nbsp;
+
+                    <a
+                        href="https://www.linkedin.com/in/uroojabidsyed"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
+
+                    &nbsp; · &nbsp;
+
+                    <a
+                        href="https://github.com/uroojsyed"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                    &nbsp; · &nbsp;
+
+                    <a href="mailto:urooj.syed@mail.utoronto.ca"> Email </a>
+                </div>
             </div>
+        </footer>
 
+        <!-- IMAGE MODAL -->
 
-            <!-- OVERVIEW -->
+        <div class="modal" role="dialog" aria-label="Expanded project image">
+            <button aria-label="Close image">×</button>
 
-            <h2>Overview</h2>
-
-            <p>
-                Public access Automated External Defibrillators
-                (AEDs) are essential emergency response devices.
-                Maintaining accurate location and equipment records
-                can support effective tracking, inspections, and
-                maintenance.
-            </p>
-
-            <p>
-                For this project, I analyzed the City of Toronto's
-                2025 AED Locations dataset to examine how AED
-                records are distributed across organizations,
-                divisions, and individual sites. I also investigated
-                data quality issues that could affect the reliability
-                of equipment records.
-            </p>
-
-            <p>
-                The project was completed as part of INF1340H –
-                Programming for Data Science at the University
-                of Toronto.
-            </p>
-
-
-            <!-- DATASET -->
-
-            <h2>Dataset &amp; tools</h2>
-
-            <p>
-                The dataset was obtained from the City of Toronto's
-                Open Data portal. It contains information about
-                publicly accessible AEDs, including organization,
-                division, site, address, placement location,
-                manufacturer, and model.
-            </p>
-
-            <p>
-                Using Python and Pandas in Google Colab,
-                I inspected, cleaned, and analyzed the records
-                to identify patterns in equipment distribution
-                and information completeness.
-            </p>
-
-            <p>
-                <a
-                    class="text-link"
-                    href="https://open.toronto.ca/dataset/automatic-external-defibrillators-aed-locations/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View original dataset ↗
-                </a>
-            </p>
-
-
-            <!-- DATA CLEANING -->
-
-            <h2>01 / Data cleaning</h2>
-
-            <p>
-                Before beginning the analysis, I inspected the
-                dataset for missing information, inconsistent
-                formatting, spelling errors, and duplicate-looking
-                records.
-            </p>
-
-            <p>
-                I performed several cleaning operations to
-                improve consistency while preserving records
-                that could represent valid AED units.
-            </p>
-
-            <ul>
-
-                <li>
-                    <strong>Missing information:</strong>
-                    Standardized missing values and "TBD"
-                    entries as "Not Provided" in selected columns.
-                </li>
-
-                <li>
-                    <strong>Inconsistent formatting:</strong>
-                    Removed extra spaces and standardized
-                    capitalization in city names.
-                </li>
-
-                <li>
-                    <strong>Spelling errors:</strong>
-                    Corrected misspelled city names to prevent
-                    locations from being counted separately.
-                </li>
-
-                <li>
-                    <strong>Duplicate-looking records:</strong>
-                    Retained identical records because they
-                    could represent separate AED units.
-                    Added sequential record IDs to distinguish rows.
-                </li>
-
-            </ul>
-
-            <p>
-                The cleaned dataset was exported as a separate
-                CSV file, preserving the original dataset for
-                comparison and reproducibility.
-            </p>
-
-
-            <!-- EXPLORATORY ANALYSIS -->
-
-            <h2>02 / Exploratory data analysis</h2>
-
-            <p>
-                I conducted six exploratory analyses to better
-                understand AED record distribution, equipment
-                information, and data completeness.
-            </p>
-
-            <p>
-                These analyses examined AED counts by division
-                and city, identified common and unique AED
-                manufacturers, compared records between
-                organizations, and located records with
-                missing placement information.
-            </p>
-
-            <p>
-                This initial exploration helped reveal differences
-                in how AED records were distributed and highlighted
-                data quality issues worth investigating further.
-            </p>
-
-
-            <!-- HIGHER LEVEL ANALYSIS -->
-
-            <h2>03 / Comparative analysis</h2>
-
-            <h3>
-                Missing placement information by organization
-            </h3>
-
-            <p>
-                To compare data completeness, I calculated the
-                percentage of AED records with missing placement
-                information for each organization.
-            </p>
-
-            <p>
-                Rather than comparing only the number of missing
-                records, I divided those counts by each
-                organization's total records. This provided
-                a proportional comparison between the
-                City of Toronto and Safe City Program.
-            </p>
-
-            <p>
-                The analysis found that the Safe City Program
-                had a higher proportion of records without
-                placement information, highlighting a potential
-                opportunity to improve record completeness.
-            </p>
-
-
-            <h3>
-                AED distribution across individual sites
-            </h3>
-
-            <p>
-                I calculated the average number of AED records
-                per site and identified locations exceeding
-                that average.
-            </p>
-
-            <p>
-                The analysis revealed that certain sites,
-                including TTC stations, had substantially
-                more AED records than the average location.
-                These concentrations may be relevant for
-                equipment tracking and record management.
-            </p>
-
-
-            <!-- KEY FINDINGS -->
-
-            <h2>04 / Key findings</h2>
-
-            <ol>
-
-                <li>
-                    <strong>Zoll was the most frequently
-                    recorded AED manufacturer.</strong>
-                    Its prevalence provides insight into
-                    the equipment represented across
-                    the dataset.
-                </li>
-
-                <li>
-                    <strong>Placement data completeness
-                    varied between organizations.</strong>
-                    The Safe City Program had a higher
-                    proportion of records without specific
-                    placement information.
-                </li>
-
-                <li>
-                    <strong>AED records were concentrated
-                    at certain sites.</strong>
-                    Some locations, including TTC stations,
-                    had above-average record counts.
-                </li>
-
-                <li>
-                    <strong>Identical records were not
-                    necessarily duplicates.</strong>
-                    Without official device identifiers,
-                    identical entries could represent
-                    separate AED units, particularly
-                    at mobile locations.
-                </li>
-
-            </ol>
-
-
-            <!-- LIMITATIONS -->
-
-            <h2>05 / Limitations &amp; reflection</h2>
-
-            <p>
-                A key challenge was determining how to handle
-                records that appeared identical. Because the
-                dataset did not include unique identifiers for
-                individual AED devices, removing these records
-                could have excluded legitimate equipment entries.
-            </p>
-
-            <p>
-                The dataset also contained incomplete location
-                and placement information. Additionally, it
-                did not include maintenance histories, device
-                conditions, inspection statuses, or usage
-                frequency, limiting conclusions about operational
-                needs and actual accessibility.
-            </p>
-
-            <p>
-                This project reinforced the importance of
-                understanding the context behind data quality
-                issues before making cleaning decisions.
-                It also demonstrated how exploratory analysis
-                can identify patterns and information gaps
-                that may support more informed public-service
-                record management.
-            </p>
-
-
-            <!-- PROJECT LINKS -->
-
-            <h2>Explore the project</h2>
-
-            <p>
-                The GitHub repository contains the Python
-                notebook, original dataset, cleaned dataset,
-                and project documentation.
-            </p>
-
-            <div class="button-row">
-
-                <a
-                    class="btn"
-                    href="https://github.com/uroojsyed/AED-2025-Data-Analysis/blob/0631f9141d7dfacf95a6df198d1177f91e966cb3/Toronto_AED_2025_Data_Analysis.ipynb" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View Code on GitHub ↗
-                </a>
-
-                <a
-                    class="btn btn-outline"
-                    href="https://github.com/uroojsyed/AED-2025-Data-Analysis"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View Project Files ↗
-                </a>
-
-            </div>
-
-
-            <!-- BACK TO COURSEWORK -->
-
-            <div
-                class="button-row"
-                style="margin-top: 48px"
-            >
-
-                <a
-                    class="btn btn-outline"
-                    href="../coursework.html"
-                >
-                    ← More coursework
-                </a>
-
-            </div>
-
-        </article>
-
-    </main>
-
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-
-        <div class="wrap footer-row">
-
-            <div>
-                © 2026 Urooj Syed · Designed with intention.
-            </div>
-
-            <div>
-
-                <a
-                    href="https://www.instagram.com/roohistudio/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    @roohistudio
-                </a>
-
-                &nbsp; · &nbsp;
-
-                <a
-                    href="https://www.linkedin.com/in/uroojabidsyed"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-                &nbsp; · &nbsp;
-
-                <a
-                    href="https://github.com/uroojsyed"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-                &nbsp; · &nbsp;
-
-                <a href="mailto:urooj.syed@mail.utoronto.ca">
-                    Email
-                </a>
-
-            </div>
-
+            <img alt="" />
         </div>
 
-    </footer>
+        <!-- JAVASCRIPT -->
 
-
-    <!-- IMAGE MODAL -->
-
-    <div
-        class="modal"
-        role="dialog"
-        aria-label="Expanded project image"
-    >
-
-        <button aria-label="Close image">
-            ×
-        </button>
-
-        <img alt="">
-
-    </div>
-
-
-    <!-- JAVASCRIPT -->
-
-    <script src="../site.js" defer></script>
-
-</body>
+        <script src="../site.js" defer></script>
+    </body>
 </html>

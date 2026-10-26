@@ -1,725 +1,498 @@
-
 <!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#f7f6f2" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f7f6f2">
+        <meta
+            name="description"
+            content="Bank Marketing Predictive Analysis — Python, Tableau, exploratory data analysis and machine learning project by Urooj Syed."
+        />
 
-    <meta
-        name="description"
-        content="Bank Marketing Predictive Analysis — Python, Tableau, exploratory data analysis and machine learning project by Urooj Syed."
-    >
+        <title>Bank Marketing — Predictive Analysis | Urooj Syed</title>
 
-    <title>Bank Marketing — Predictive Analysis | Urooj Syed</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
 
-    <link rel="stylesheet" href="../style.css">
-</head>
-
-<body>
-
-    <!-- ========================================
+    <body>
+        <!-- ========================================
          HEADER & NAVIGATION
     ======================================== -->
 
-    <header class="header">
+        <header class="header">
+            <nav class="wrap nav" aria-label="Main navigation">
+                <a class="mark" href="../index.html" aria-label="Urooj Syed home"> u.s. </a>
 
-        <nav class="wrap nav" aria-label="Main navigation">
+                <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    ☰
+                </button>
 
-            <a
-                class="mark"
-                href="../index.html"
-                aria-label="Urooj Syed home"
-            >
-                u.s.
-            </a>
+                <div class="links">
+                    <a href="../work.html">Work</a>
+                    <a href="../coursework.html">Coursework</a>
+                    <a href="../creative.html">Creative</a>
+                    <a href="../passion.html">Passion Projects</a>
+                    <a href="../about.html">About</a>
+                </div>
+            </nav>
+        </header>
 
-            <button
-                class="mobile-toggle"
-                aria-label="Toggle menu"
-                aria-expanded="false"
-            >
-                ☰
-            </button>
-
-            <div class="links">
-                <a href="../work.html">Work</a>
-                <a href="../coursework.html">Coursework</a>
-                <a href="../creative.html">Creative</a>
-                <a href="../passion.html">Passion Projects</a>
-                <a href="../about.html">About</a>
-            </div>
-
-        </nav>
-
-    </header>
-
-
-    <!-- ========================================
+        <!-- ========================================
          MAIN CONTENT
     ======================================== -->
 
-    <main>
-
-        <article class="article">
-
-            <!-- ========================================
+        <main>
+            <article class="article">
+                <!-- ========================================
                  PROJECT HEADER
             ======================================== -->
 
-            <div class="article-head">
+                <div class="article-head">
+                    <a class="text-link" href="../coursework.html"> ← Back to coursework </a>
 
-                <a
-                    class="text-link"
-                    href="../coursework.html"
-                >
-                    ← Back to coursework
-                </a>
+                    <div class="eyebrow" style="margin-top: 30px">
+                        Coursework / Data Analytics &amp; Machine Learning / 2022
+                    </div>
 
-                <div
-                    class="eyebrow"
-                    style="margin-top: 30px"
-                >
-                    Coursework / Data Analytics &amp; Machine Learning / 2022
+                    <h1>Bank Marketing — Predictive Analysis</h1>
+
+                    <p class="article-lede">
+                        Using exploratory data analysis, feature selection and classification models
+                        to investigate how customer data can inform more effective bank
+                        telemarketing strategies.
+                    </p>
+
+                    <!-- PROJECT TOOLS -->
+
+                    <div class="tag-row">
+                        <span class="tag">Python</span>
+                        <span class="tag">Tableau</span>
+                        <span class="tag">Data Analysis</span>
+                        <span class="tag">Data Visualization</span>
+                        <span class="tag">Data Cleaning</span>
+                        <span class="tag">Feature Selection</span>
+                        <span class="tag">Decision Trees</span>
+                        <span class="tag">Naïve Bayes</span>
+                        <span class="tag">Predictive Modelling</span>
+                    </div>
                 </div>
 
-                <h1>
-                    Bank Marketing — Predictive Analysis
-                </h1>
+                <!-- ========================================
+                     PROJECT HERO
+                     (Hero image is currently disabled. To bring it
+                     back, add the image file name to the src below
+                     and remove the comment markers around the <img>.)
+                ======================================== -->
 
-                <p class="article-lede">
-                    Using exploratory data analysis, feature selection
-                    and classification models to investigate how
-                    customer data can inform more effective
-                    bank telemarketing strategies.
+                <!--
+                <img
+                    class="article-hero"
+                    src="../images/"
+                    alt="Bank Marketing predictive analysis project visual"
+                    data-fallback
+                >
+                -->
+
+                <!-- ========================================
+                     PROJECT OVERVIEW
+                ======================================== -->
+
+                <h2>Project overview</h2>
+
+                <p>
+                    This project was completed as the culminating assignment for CIND119, part of my
+                    postgraduate studies in Data Analytics, Big Data and Predictive Analytics at
+                    Toronto Metropolitan University.
                 </p>
 
+                <p>
+                    Using the Bank Marketing dataset, which contains information about customers
+                    contacted during a Portuguese banking institution's telemarketing campaigns, the
+                    project examined how customer characteristics and campaign information could
+                    help predict whether a client would subscribe to a term deposit.
+                </p>
 
-                <!-- PROJECT TOOLS -->
+                <p>
+                    The analysis combined data exploration, visualization, data preparation and
+                    machine-learning classification to identify potentially useful predictors and
+                    compare model performance.
+                </p>
 
-                <div class="tag-row">
-
-                    <span class="tag">Python</span>
-                    <span class="tag">Tableau</span>
-                    <span class="tag">Data Analysis</span>
-                    <span class="tag">Data Visualization</span>
-                    <span class="tag">Data Cleaning</span>
-                    <span class="tag">Feature Selection</span>
-                    <span class="tag">Decision Trees</span>
-                    <span class="tag">Naïve Bayes</span>
-                    <span class="tag">Predictive Modelling</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- ========================================
-                 PROJECT HERO
-            
-
-            <img
-                class="article-hero"
-                src="../images/
-                alt="Bank Marketing predictive analysis project visual"
-                data-fallback
-            >
-            ======================================== -->
-
-
-            <!-- ========================================
-                 PROJECT OVERVIEW
-            ======================================== -->
-
-            <h2>
-                Project overview
-            </h2>
-
-            <p>
-                This project was completed as the culminating
-                assignment for CIND119, part of my postgraduate
-                studies in Data Analytics, Big Data and
-                Predictive Analytics at Toronto Metropolitan
-                University.
-            </p>
-
-            <p>
-                Using the Bank Marketing dataset, which contains
-                information about customers contacted during
-                a Portuguese banking institution's telemarketing
-                campaigns, the project examined how customer
-                characteristics and campaign information could
-                help predict whether a client would subscribe
-                to a term deposit.
-            </p>
-
-            <p>
-                The analysis combined data exploration,
-                visualization, data preparation and
-                machine-learning classification to identify
-                potentially useful predictors and compare
-                model performance.
-            </p>
-
-
-            <!-- ========================================
+                <!-- ========================================
                  RESEARCH OBJECTIVE
             ======================================== -->
 
-            <h2>
-                Research objective
-            </h2>
+                <h2>Research objective</h2>
 
-            <p>
-                Banks conduct marketing campaigns to encourage
-                customers to subscribe to financial products.
-                However, contacting customers without a
-                data-informed strategy can result in
-                inefficient outreach.
-            </p>
+                <p>
+                    Banks conduct marketing campaigns to encourage customers to subscribe to
+                    financial products. However, contacting customers without a data-informed
+                    strategy can result in inefficient outreach.
+                </p>
 
-            <p>
-                The objective of this project was to
-                investigate whether historical campaign
-                data could help inform a more effective
-                telemarketing strategy.
-            </p>
+                <p>
+                    The objective of this project was to investigate whether historical campaign
+                    data could help inform a more effective telemarketing strategy.
+                </p>
 
-            <p>
-                The central question was:
-            </p>
+                <p>The central question was:</p>
 
-            <p class="note">
-                How can customer and campaign data be
-                used to predict term-deposit subscriptions
-                and inform more targeted telemarketing
-                decisions?
-            </p>
+                <p class="note">
+                    How can customer and campaign data be used to predict term-deposit subscriptions
+                    and inform more targeted telemarketing decisions?
+                </p>
 
-
-            <!-- ========================================
+                <!-- ========================================
                  DATASET
             ======================================== -->
 
-            <h2>
-                Dataset &amp; target variable
-            </h2>
+                <h2>Dataset &amp; target variable</h2>
 
-            <p>
-                The project used the Bank Marketing dataset,
-                which records information associated with
-                direct marketing campaigns conducted by
-                a Portuguese banking institution.
-            </p>
+                <p>
+                    The project used the Bank Marketing dataset, which records information
+                    associated with direct marketing campaigns conducted by a Portuguese banking
+                    institution.
+                </p>
 
-            <p>
-                The central outcome was the variable
-                <strong>y</strong>, indicating whether
-                a customer subscribed to a term deposit.
-            </p>
+                <p>
+                    The central outcome was the variable
+                    <strong>y</strong>, indicating whether a customer subscribed to a term deposit.
+                </p>
 
-            <ol>
+                <ol>
+                    <li>Yes — the customer subscribed to a term deposit.</li>
 
-                <li>
-                    Yes — the customer subscribed
-                    to a term deposit.
-                </li>
+                    <li>No — the customer did not subscribe to a term deposit.</li>
+                </ol>
 
-                <li>
-                    No — the customer did not subscribe
-                    to a term deposit.
-                </li>
+                <p>
+                    This made the research problem a binary classification task: predicting one of
+                    two possible subscription outcomes.
+                </p>
 
-            </ol>
-
-            <p>
-                This made the research problem a binary
-                classification task: predicting one
-                of two possible subscription outcomes.
-            </p>
-
-
-            <!-- ========================================
+                <!-- ========================================
                  01 - EXPLORATORY DATA ANALYSIS
             ======================================== -->
 
-            <h2>
-                01 / Exploratory data analysis
-            </h2>
+                <h2>01 / Exploratory data analysis</h2>
 
-            <p>
-                The first stage involved examining the
-                dataset's customer attributes and exploring
-                how they related to the subscription outcome.
-            </p>
+                <p>
+                    The first stage involved examining the dataset's customer attributes and
+                    exploring how they related to the subscription outcome.
+                </p>
 
-            <p>
-                Using Python and data visualizations,
-                we investigated relationships between
-                individual attributes and the target
-                variable, as well as relationships
-                among the attributes themselves.
-            </p>
+                <p>
+                    Using Python and data visualizations, we investigated relationships between
+                    individual attributes and the target variable, as well as relationships among
+                    the attributes themselves.
+                </p>
 
-            <h3>
-                Analytical approach
-            </h3>
+                <h3>Analytical approach</h3>
 
-            <ol>
+                <ol>
+                    <li>Examined the available customer and campaign attributes.</li>
 
-                <li>
-                    Examined the available customer
-                    and campaign attributes.
-                </li>
+                    <li>
+                        Investigated relationships between individual attributes and term-deposit
+                        subscription outcomes.
+                    </li>
 
-                <li>
-                    Investigated relationships between
-                    individual attributes and term-deposit
-                    subscription outcomes.
-                </li>
+                    <li>Used visualizations to explore patterns and associations.</li>
 
-                <li>
-                    Used visualizations to explore
-                    patterns and associations.
-                </li>
+                    <li>
+                        Considered which attributes appeared most relevant to the prediction task.
+                    </li>
+                </ol>
 
-                <li>
-                    Considered which attributes appeared
-                    most relevant to the prediction task.
-                </li>
+                <p>
+                    This exploratory stage helped inform the subsequent data preparation and
+                    feature-selection process.
+                </p>
 
-            </ol>
-
-            <p>
-                This exploratory stage helped inform
-                the subsequent data preparation and
-                feature-selection process.
-            </p>
-
-
-            <!-- ========================================
+                <!-- ========================================
                  02 - DATA PREPARATION
             ======================================== -->
 
-            <h2>
-                02 / Data cleaning &amp; feature selection
-            </h2>
+                <h2>02 / Data cleaning &amp; feature selection</h2>
 
-            <p>
-                Following exploratory analysis, we
-                prepared the dataset for predictive
-                modelling.
-            </p>
+                <p>
+                    Following exploratory analysis, we prepared the dataset for predictive
+                    modelling.
+                </p>
 
-            <p>
-                This involved cleaning the data and
-                examining the relevance of its attributes
-                to the classification problem.
-            </p>
+                <p>
+                    This involved cleaning the data and examining the relevance of its attributes to
+                    the classification problem.
+                </p>
 
-            <p>
-                To investigate whether a smaller set
-                of predictors could improve performance,
-                we created a modified dataset that
-                excluded attributes considered less
-                significant to the prediction task.
-            </p>
+                <p>
+                    To investigate whether a smaller set of predictors could improve performance, we
+                    created a modified dataset that excluded attributes considered less significant
+                    to the prediction task.
+                </p>
 
-            <p>
-                This allowed us to compare model
-                performance using two approaches:
-                the full dataset and a reduced-feature
-                version of the data.
-            </p>
+                <p>
+                    This allowed us to compare model performance using two approaches: the full
+                    dataset and a reduced-feature version of the data.
+                </p>
 
-
-            <!-- ========================================
+                <!-- ========================================
                  03 - PREDICTIVE MODELLING
             ======================================== -->
 
-            <h2>
-                03 / Predictive modelling
-            </h2>
+                <h2>03 / Predictive modelling</h2>
 
-            <p>
-                We applied two machine-learning
-                classification algorithms to predict
-                whether a customer would subscribe
-                to a term deposit.
-            </p>
+                <p>
+                    We applied two machine-learning classification algorithms to predict whether a
+                    customer would subscribe to a term deposit.
+                </p>
 
+                <!-- DECISION TREE -->
 
-            <!-- DECISION TREE -->
+                <h3>Decision Tree classification</h3>
 
-            <h3>
-                Decision Tree classification
-            </h3>
+                <p>
+                    Decision Trees classify observations through a sequence of decisions based on
+                    input attributes.
+                </p>
 
-            <p>
-                Decision Trees classify observations
-                through a sequence of decisions based
-                on input attributes.
-            </p>
+                <p>
+                    We evaluated this algorithm as one approach to predicting customer subscription
+                    outcomes.
+                </p>
 
-            <p>
-                We evaluated this algorithm as one
-                approach to predicting customer
-                subscription outcomes.
-            </p>
+                <!-- NAIVE BAYES -->
 
+                <h3>Naïve Bayes classification</h3>
 
-            <!-- NAIVE BAYES -->
+                <p>
+                    Naïve Bayes is a probabilistic classification algorithm based on Bayes' theorem,
+                    with an assumption of conditional independence between predictors given the
+                    target class.
+                </p>
 
-            <h3>
-                Naïve Bayes classification
-            </h3>
+                <p>
+                    We also tested this algorithm to investigate how well it predicted subscription
+                    outcomes.
+                </p>
 
-            <p>
-                Naïve Bayes is a probabilistic
-                classification algorithm based
-                on Bayes' theorem, with an assumption
-                of conditional independence between
-                predictors given the target class.
-            </p>
+                <!-- MODEL COMPARISON -->
 
-            <p>
-                We also tested this algorithm to
-                investigate how well it predicted
-                subscription outcomes.
-            </p>
+                <h3>Model comparison</h3>
 
+                <p>
+                    Each algorithm was evaluated using both versions of the dataset: the complete
+                    set of attributes and the reduced-feature dataset.
+                </p>
 
-            <!-- MODEL COMPARISON -->
+                <p>This produced four model configurations:</p>
 
-            <h3>
-                Model comparison
-            </h3>
+                <ol>
+                    <li>Decision Tree — full dataset</li>
 
-            <p>
-                Each algorithm was evaluated using
-                both versions of the dataset:
-                the complete set of attributes
-                and the reduced-feature dataset.
-            </p>
+                    <li>Decision Tree — reduced-feature dataset</li>
 
-            <p>
-                This produced four model configurations:
-            </p>
+                    <li>Naïve Bayes — full dataset</li>
 
-            <ol>
+                    <li>Naïve Bayes — reduced-feature dataset</li>
+                </ol>
 
-                <li>
-                    Decision Tree — full dataset
-                </li>
+                <p>
+                    The purpose of this comparison was to evaluate differences in predictive
+                    performance and determine whether reducing the number of input attributes
+                    improved model accuracy.
+                </p>
 
-                <li>
-                    Decision Tree — reduced-feature dataset
-                </li>
-
-                <li>
-                    Naïve Bayes — full dataset
-                </li>
-
-                <li>
-                    Naïve Bayes — reduced-feature dataset
-                </li>
-
-            </ol>
-
-            <p>
-                The purpose of this comparison was
-                to evaluate differences in predictive
-                performance and determine whether
-                reducing the number of input attributes
-                improved model accuracy.
-            </p>
-
-
-            <!-- ========================================
+                <!-- ========================================
                  04 - RESULTS
             ======================================== -->
 
-            <h2>
-                04 / Model results
-            </h2>
+                <h2>04 / Model results</h2>
 
-            <p>
-                Based on the results documented in
-                my original project summary, the
-                Naïve Bayes classifier using the
-                reduced-feature dataset achieved
-                the highest reported accuracy.
-            </p>
+                <p>
+                    Based on the results documented in my original project summary, the Naïve Bayes
+                    classifier using the reduced-feature dataset achieved the highest reported
+                    accuracy.
+                </p>
 
+                <!-- KEY RESULT -->
 
-            <!-- KEY RESULT -->
+                <div class="campaign-results">
+                    <div class="campaign-result">
+                        <strong> 90% </strong>
 
-            <div class="campaign-results">
+                        <span> Reported model accuracy </span>
 
-                <div class="campaign-result">
+                        <p>Best-performing configuration</p>
+                    </div>
 
-                    <strong>
-                        90%
-                    </strong>
+                    <div class="campaign-result">
+                        <strong> 4 </strong>
 
-                    <span>
-                        Reported model accuracy
-                    </span>
+                        <span> Model configurations </span>
 
-                    <p>
-                        Best-performing configuration
-                    </p>
-
+                        <p>Two algorithms across two feature sets</p>
+                    </div>
                 </div>
 
-                <div class="campaign-result">
+                <h3>Best-performing configuration</h3>
 
-                    <strong>
-                        4
-                    </strong>
+                <p>
+                    Naïve Bayes classification using the reduced-feature dataset produced the
+                    highest reported accuracy of 90%.
+                </p>
 
-                    <span>
-                        Model configurations
-                    </span>
+                <p>
+                    The project findings suggested that excluding less relevant attributes could
+                    improve predictive performance for the selected algorithm.
+                </p>
 
-                    <p>
-                        Two algorithms across two
-                        feature sets
-                    </p>
+                <p class="note">
+                    The 90% accuracy figure is preserved from the original project summary. The full
+                    evaluation report is no longer available, so the original validation procedure,
+                    confusion matrix and class-specific performance metrics cannot currently be
+                    verified.
+                </p>
 
-                </div>
-
-            </div>
-
-
-            <h3>
-                Best-performing configuration
-            </h3>
-
-            <p>
-                Naïve Bayes classification using
-                the reduced-feature dataset produced
-                the highest reported accuracy of 90%.
-            </p>
-
-            <p>
-                The project findings suggested
-                that excluding less relevant
-                attributes could improve
-                predictive performance for
-                the selected algorithm.
-            </p>
-
-            <p class="note">
-                The 90% accuracy figure is preserved
-                from the original project summary.
-                The full evaluation report is no longer
-                available, so the original validation
-                procedure, confusion matrix and
-                class-specific performance metrics
-                cannot currently be verified.
-            </p>
-
-
-            <!-- ========================================
+                <!-- ========================================
                  05 - BUSINESS IMPLICATIONS
             ======================================== -->
 
-            <h2>
-                05 / Business implications
-            </h2>
+                <h2>05 / Business implications</h2>
 
-            <p>
-                The project explored how predictive
-                modelling could support more informed
-                telemarketing decisions.
-            </p>
+                <p>
+                    The project explored how predictive modelling could support more informed
+                    telemarketing decisions.
+                </p>
 
-            <p>
-                Rather than treating all customers
-                as equally likely to subscribe,
-                a banking institution could use
-                historical campaign data to investigate
-                which customer characteristics
-                are associated with subscription.
-            </p>
+                <p>
+                    Rather than treating all customers as equally likely to subscribe, a banking
+                    institution could use historical campaign data to investigate which customer
+                    characteristics are associated with subscription.
+                </p>
 
-            <p>
-                The original project recommended
-                prioritizing the attributes included
-                in the reduced-feature Naïve Bayes
-                model when developing a more targeted
-                telemarketing strategy.
-            </p>
+                <p>
+                    The original project recommended prioritizing the attributes included in the
+                    reduced-feature Naïve Bayes model when developing a more targeted telemarketing
+                    strategy.
+                </p>
 
-            <p>
-                While the reported classification
-                accuracy was promising, additional
-                evaluation would be needed before
-                using such a model in practice,
-                particularly to assess how well
-                it identifies customers who
-                actually subscribe.
-            </p>
+                <p>
+                    While the reported classification accuracy was promising, additional evaluation
+                    would be needed before using such a model in practice, particularly to assess
+                    how well it identifies customers who actually subscribe.
+                </p>
 
-
-            <!-- ========================================
+                <!-- ========================================
                  PROJECT TAKEAWAY
             ======================================== -->
 
-            <h2>
-                Project takeaway
-            </h2>
+                <h2>Project takeaway</h2>
 
-            <p>
-                This project provided practical
-                experience in applying a complete
-                analytical workflow to a business
-                decision-making problem.
-            </p>
+                <p>
+                    This project provided practical experience in applying a complete analytical
+                    workflow to a business decision-making problem.
+                </p>
 
-            <p>
-                From investigating customer data
-                and visualizing patterns to
-                preparing features and comparing
-                classification models, the project
-                demonstrated how data analysis
-                can inform business strategy.
-            </p>
+                <p>
+                    From investigating customer data and visualizing patterns to preparing features
+                    and comparing classification models, the project demonstrated how data analysis
+                    can inform business strategy.
+                </p>
 
-            <p>
-                It also highlighted the importance
-                of evaluating multiple modelling
-                approaches rather than assuming
-                that a larger number of input
-                features necessarily leads
-                to better predictions.
-            </p>
+                <p>
+                    It also highlighted the importance of evaluating multiple modelling approaches
+                    rather than assuming that a larger number of input features necessarily leads to
+                    better predictions.
+                </p>
 
-
-            <!-- ========================================
+                <!-- ========================================
                  PROJECT DOCUMENTATION
             ======================================== -->
 
-            <h2>
-                Project documentation
-            </h2>
+                <h2>Project documentation</h2>
 
-            <p>
-                The original project report was
-                hosted through a university-associated
-                Google Drive account and is no
-                longer accessible.
-            </p>
+                <p>
+                    The original project report was hosted through a university-associated Google
+                    Drive account and is no longer accessible.
+                </p>
 
-            <p>
-                This case study preserves the
-                research objective, analytical
-                workflow, modelling approach and
-                primary result documented in
-                my original portfolio.
-            </p>
+                <p>
+                    This case study preserves the research objective, analytical workflow, modelling
+                    approach and primary result documented in my original portfolio.
+                </p>
 
-
-            <!-- ========================================
+                <!-- ========================================
                  BACK TO PROJECTS
             ======================================== -->
 
-            <div class="button-row">
+                <div class="button-row">
+                    <a class="btn btn-outline" href="../coursework.html"> More coursework ↗ </a>
+                </div>
+            </article>
+        </main>
 
-                <a
-                    class="btn btn-outline"
-                    href="../coursework.html"
-                >
-                    More coursework ↗
-                </a>
-
-            </div>
-
-        </article>
-
-    </main>
-    
-
- <!-- ========================================
+        <!-- ========================================
          FOOTER
     ======================================== -->
-	
-<!-- FOOTER -->
 
-<footer class="footer">
-    <div class="wrap footer-row">
+        <!-- FOOTER -->
 
-        <div>
-            © 2026 Urooj Syed · Designed with intention.
-        </div>
+        <footer class="footer">
+            <div class="wrap footer-row">
+                <div>© 2026 Urooj Syed · Designed with intention.</div>
 
-        <div>
-            <a
-                href="https://www.instagram.com/roohistudio/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                @roohistudio
-            </a>
+                <div>
+                    <a
+                        href="https://www.instagram.com/roohistudio/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        @roohistudio
+                    </a>
 
-            &nbsp; · &nbsp;
+                    &nbsp; · &nbsp;
 
-            <a
-                href="https://www.linkedin.com/in/uroojabidsyed"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                LinkedIn
-            </a>
+                    <a
+                        href="https://www.linkedin.com/in/uroojabidsyed"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
 
-            &nbsp; · &nbsp;
+                    &nbsp; · &nbsp;
 
-            <a
-                href="https://github.com/uroojsyed"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
+                    <a
+                        href="https://github.com/uroojsyed"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
 
-            &nbsp; · &nbsp;
+                    &nbsp; · &nbsp;
 
-            <a href="mailto:urooj.syed@mail.utoronto.ca">
-                Email
-            </a>
+                    <a href="mailto:urooj.syed@mail.utoronto.ca"> Email </a>
+                </div>
+            </div>
+        </footer>
 
-        </div>
-
-    </div>
-</footer>
-
-
-    <!-- ========================================
+        <!-- ========================================
          IMAGE MODAL
     ======================================== -->
 
-    <div
-        class="modal"
-        role="dialog"
-        aria-label="Expanded project image"
-    >
+        <div class="modal" role="dialog" aria-label="Expanded project image">
+            <button aria-label="Close image">×</button>
 
-        <button aria-label="Close image">
-            ×
-        </button>
+            <img alt="" />
+        </div>
 
-        <img alt="">
-
-    </div>
-
-
-    <!-- ========================================
+        <!-- ========================================
          JAVASCRIPT
     ======================================== -->
 
-    <script src="../site.js" defer></script>
-
-</body>
+        <script src="../site.js" defer></script>
+    </body>
 </html>
