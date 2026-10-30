@@ -224,386 +224,390 @@
             </p>
 
 
-            <!-- ========================================
-                 02 — ANALYZING THE EXISTING EXPERIENCE
-            ======================================== -->
+           
+<!-- ========================================
+     02 — ANALYZING THE USER JOURNEY
+======================================== -->
 
-            <h2>
-                02 / Analyzing the existing experience
-            </h2>
+<h2>
+    02 / Analyzing the existing user journey
+</h2>
 
-            <p>
-                I reviewed Google Analytics 4 and behavioural
-                analytics to establish the context for the
-                redesign and investigate possible usability
-                challenges.
-            </p>
+<p>
+    To inform the redesign, I combined Google
+    Analytics 4 acquisition data with
+    Hotjar/Contentsquare behavioural analytics
+    for the existing Zakat Calculator.
+</p>
 
-            <p>
-                These sources offered complementary
-                perspectives: GA4 described how visitors
-                reached the calculator, while behavioural
-                analytics provided broader insight into
-                interaction and engagement patterns.
-            </p>
+<p>
+    Rather than examining traffic and engagement
+    as isolated metrics, I considered how users
+    arrived at the calculator, how they interacted
+    with the page, and where the experience
+    presented opportunities for improvement.
+</p>
 
+<p>
+    The objective was to establish a
+    data-informed rationale for simplifying
+    the calculation process and making
+    the user's financial information
+    easier to understand.
+</p>
 
-            <!-- ========================================
-                 GOOGLE ANALYTICS 4
-            ======================================== -->
 
-            <h3>
-                Traffic &amp; acquisition analysis
-            </h3>
+<!-- ========================================
+     ANALYTICS SOURCES
+======================================== -->
 
-            <p class="note">
-                Source: Google Analytics 4, Pages and Screens
-                report for /zakat-calculator.
-                Reporting period: January 1–October 29, 2026.
-                Figures represent aggregated page views.
-            </p>
+<p class="note">
+    Data sources: Google Analytics 4
+    (January 1–October 29, 2026)
+    and Hotjar/Contentsquare
+    (January 1–March 31, 2026).
+    The reporting periods and measurement
+    definitions differ. Figures are
+    presented separately where necessary.
+</p>
 
-            <div class="campaign-results">
 
-                <!-- PAGE VIEWS -->
+<!-- ========================================
+     KEY CALCULATOR METRICS
+======================================== -->
 
-                <div class="campaign-result">
+<h3>
+    Key findings
+</h3>
 
-                    <strong>3,116</strong>
+<div class="campaign-results">
 
-                    <span>
-                        Calculator page views
-                    </span>
+    <div class="campaign-result">
 
-                    <p>
-                        Across recorded acquisition sources
-                    </p>
+        <strong>3,116</strong>
 
-                </div>
+        <span>
+            Calculator page views
+        </span>
 
+        <p>
+            Recorded in GA4 across
+            acquisition sources
+        </p>
 
-                <!-- PAID SEARCH -->
+    </div>
 
-                <div class="campaign-result">
+    <div class="campaign-result">
 
-                    <strong>75.2%</strong>
+        <strong>75.2%</strong>
 
-                    <span>
-                        Paid-search share
-                    </span>
+        <span>
+            Paid-search traffic share
+        </span>
 
-                    <p>
-                        2,344 page views from
-                        Google and Bing CPC
-                    </p>
+        <p>
+            2,344 page views from
+            paid search
+        </p>
 
-                </div>
+    </div>
 
+    <div class="campaign-result">
 
-            </div>
+        <strong>1.4k</strong>
 
+        <span>
+            Calculator page sessions
+        </span>
 
-            <!-- ========================================
-                 ACQUISITION BREAKDOWN
-            ======================================== -->
+        <p>
+            Filtered behavioural
+            analytics page overview
+        </p>
 
-            <h3>
-                Acquisition source breakdown
-            </h3>
+    </div>
 
-            <p>
-                To understand the composition of calculator
-                traffic, I grouped sources into paid search,
-                direct, organic search, and other traffic.
-            </p>
+    <div class="campaign-result">
 
-            <ol>
+        <strong>118</strong>
 
-                <li>
-                    <strong>Google paid search:</strong>
-                    1,545 views (49.6%).
-                </li>
+        <span>
+            Sessions with rage clicks
+        </span>
 
-                <li>
-                    <strong>Bing paid search:</strong>
-                    799 views (25.6%).
-                </li>
+        <p>
+            Potential interaction
+            friction requiring investigation
+        </p>
 
-                <li>
-                    <strong>Direct:</strong>
-                    313 views (10.0%).
-                </li>
+    </div>
 
-                <li>
-                    <strong>Organic search:</strong>
-                    289 views (9.3%).
-                </li>
+    <div class="campaign-result">
 
-                <li>
-                    <strong>Other or unknown:</strong>
-                    170 views (5.5%).
-                </li>
+        <strong>67.9%</strong>
 
-            </ol>
+        <span>
+            Average scroll depth
+        </span>
+
+        <p>
+            Behavioural analytics
+            page overview
+        </p>
+
+    </div>
+
+    <div class="campaign-result">
+
+        <strong>72%</strong>
+
+        <span>
+            Reported drop-off rate
+        </span>
+
+        <p>
+            Platform-defined measure,
+            not verified calculation
+            abandonment
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ========================================
+     FINDING 1 — ACQUISITION
+======================================== -->
+
+<h3>
+    Finding 01 / Campaign-driven traffic
+</h3>
+
+<p>
+    GA4 showed that 75.2% of recorded
+    Zakat Calculator page views originated
+    from paid search,
+    representing 2,344 of 3,116 views.
+</p>
+
+<p>
+    This indicated that paid campaigns
+    were an important source of traffic
+    to the calculator.
+</p>
+
+<p>
+    As a result, the entry experience
+    became a key design consideration.
+    Visitors arriving through campaigns
+    should be able to identify relevant
+    financial inputs and begin a
+    calculation without unnecessary
+    navigation or decisions.
+</p>
+
+<p>
+    <strong>Design response:</strong>
+    Prioritize clearly visible asset
+    categories, simplified inputs,
+    and a live Zakat estimate.
+</p>
+
+
+<!-- ========================================
+     FINDING 2 — ENGAGEMENT
+======================================== -->
+
+<h3>
+    Finding 02 / User engagement and interaction
+</h3>
+
+<p>
+    The Hotjar/Contentsquare analytics dashboard for the calculator recorded approximately
+    1,400 sessions and 7,300 clicks,
+    with an average time on page
+    of 1 minute and 30 seconds.
+</p>
+
+<p>
+    Average scroll depth was 67.9%,
+    providing a measure of how far
+    users progressed vertically
+    through the page.
+</p>
+
+<p>
+    These metrics helped frame
+    questions about the discoverability
+    of financial inputs, supporting
+    explanations, and donation actions.
+</p>
+
+<p>
+    For example, if relevant controls
+    or explanations are positioned
+    too far down the page, some
+    visitors may not encounter
+    them during their session.
+    The scroll-depth average alone
+    does not establish whether
+    specific elements were seen.
+</p>
+
+<p>
+    <strong>Design response:</strong>
+    Improve the information hierarchy,
+    make important asset categories
+    easier to locate, and keep
+    the estimated Zakat amount
+    visible as inputs change.
+</p>
+
+
+<!-- ========================================
+     FINDING 3 — FRICTION
+======================================== -->
+
+<h3>
+    Finding 03 / Potential interaction friction
+</h3>
+
+<p>
+    Behavioural analytics recorded
+    118 sessions with rage clicks
+    and a reported drop-off rate
+    of 72% in the filtered
+    page overview.
+</p>
+
+<p>
+    Rage clicks involve repeated
+    interactions with an element
+    and may indicate confusion,
+    unresponsive controls,
+    or unmet user expectations.
+</p>
+
+<p>
+    These signals warranted closer
+    investigation of the calculator's
+    input controls and navigation.
+    They did not establish which
+    specific elements caused
+    frustration or why users left.
+</p>
+
+<p>
+    The reported drop-off rate
+    also required careful interpretation.
+    Without a confirmed calculation
+    completion event and the platform's
+    precise metric definition,
+    it cannot be treated as a
+    72% calculation abandonment rate.
+</p>
+
+<p>
+    <strong>Design response:</strong>
+    Reduce unnecessary interactions,
+    clarify input controls, provide
+    contextual explanations,
+    and make calculation feedback
+    more immediate.
+</p>
+
+
+
+<!-- ========================================
+     SYNTHESIS
+======================================== -->
+
+<h3>
+    Connecting the findings
+</h3>
+
+<p>
+    Considered together, the analytics
+    described a calculator attracting
+    substantial paid-search traffic,
+    while behavioural reporting
+    highlighted interaction patterns
+    and potential friction that
+    warranted further investigation.
+</p>
+
+<p>
+    This shaped the central redesign
+    hypothesis: making financial inputs
+    easier to discover, reducing
+    unnecessary steps, and providing
+    transparent real-time calculations
+    could help users complete
+    the process more confidently
+    and efficiently.
+</p>
+
+<p>
+    The resulting priorities were:
+</p>
+
+<ol>
+
+    <li>
+        <strong>Improve the entry experience:</strong>
+        Make common financial categories
+        immediately discoverable.
+    </li>
+
+    <li>
+        <strong>Reduce interaction friction:</strong>
+        Simplify controls and remove
+        avoidable decisions.
+    </li>
+
+    <li>
+        <strong>Increase transparency:</strong>
+        Show a continuously updating
+        estimate and explain
+        the calculation breakdown.
+    </li>
+
+    <li>
+        <strong>Strengthen measurement:</strong>
+        Track calculation starts,
+        completed estimates, and
+        donation progression to
+        evaluate the redesign.
+    </li>
+
+</ol>
+
+
+<!-- ========================================
+     ANALYTICAL LIMITATIONS
+======================================== -->
+
+<h3>
+    Analytical limitations
+</h3>
+
+
+<p>
+    The analysis did not establish a
+    complete historical conversion
+    funnel or a causal relationship
+    between specific interface
+    elements and user drop-off.
+</p>
+
+<p>
+    These limitations informed
+    the proposed event-tracking
+    and validation framework
+    developed later in the project.
+</p>
 
-            <h3>
-                Interpreting the findings
-            </h3>
-
-            <p>
-                Paid search accounted for approximately
-                three-quarters of calculator page views.
-                This made the entry experience particularly
-                relevant for visitors arriving through
-                campaign-driven journeys.
-            </p>
-
-            <p>
-                The findings supported prioritizing
-                immediate access to relevant asset
-                categories, clearer instructions,
-                and visible calculation feedback.
-            </p>
-
-            <p>
-                However, acquisition data alone does not
-                identify where users encounter difficulty
-                or establish why a calculation may
-                remain incomplete.
-            </p>
-
-
-            <!-- ========================================
-                 BEHAVIOURAL ANALYTICS
-            ======================================== -->
-
-            <h3>
-                Behavioural analytics
-            </h3>
-
-            <p>
-                I also reviewed behavioural analytics
-                covering website engagement and
-                interaction patterns.
-            </p>
-
-            <p class="note">
-                Source: Behavioural analytics dashboard,
-                January 1–March 31, 2026.
-                Site-wide figures are distinguished from
-                filtered page metrics. The exact filtered
-                page URL requires confirmation.
-            </p>
-
-
-            <!-- WEBSITE-WIDE METRICS -->
-
-            <h3>
-                Website engagement context
-            </h3>
-
-            <div class="campaign-results">
-
-                <div class="campaign-result">
-
-                    <strong>154.8k</strong>
-
-                    <span>
-                        Website sessions
-                    </span>
-
-                    <p>
-                        Site-wide reporting
-                    </p>
-
-                </div>
-
-                <div class="campaign-result">
-
-                    <strong>2:06</strong>
-
-                    <span>
-                        Average session duration
-                    </span>
-
-                    <p>
-                        Site-wide average
-                    </p>
-
-                </div>
-
-                <div class="campaign-result">
-
-                    <strong>80.4%</strong>
-
-                    <span>
-                        Bounce rate
-                    </span>
-
-                    <p>
-                        Site-wide dashboard metric
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- FILTERED PAGE METRICS -->
-
-            <h3>
-                Filtered page interaction signals
-            </h3>
-
-            <div class="campaign-results">
-
-                <div class="campaign-result">
-
-                    <strong>1.4k</strong>
-
-                    <span>
-                        Sessions
-                    </span>
-
-                    <p>
-                        Filtered page overview
-                    </p>
-
-                </div>
-
-                <div class="campaign-result">
-
-                    <strong>7.3k</strong>
-
-                    <span>
-                        Click interactions
-                    </span>
-
-                    <p>
-                        Recorded by the analytics platform
-                    </p>
-
-                </div>
-
-                <div class="campaign-result">
-
-                    <strong>118</strong>
-
-                    <span>
-                        Sessions with rage clicks
-                    </span>
-
-                    <p>
-                        Potential interaction friction signal
-                    </p>
-
-                </div>
-
-                <div class="campaign-result">
-
-                    <strong>1:30</strong>
-
-                    <span>
-                        Average time on page
-                    </span>
-
-                    <p>
-                        Filtered page overview
-                    </p>
-
-                </div>
-
-                <div class="campaign-result">
-
-                    <strong>67.9%</strong>
-
-                    <span>
-                        Average scroll depth
-                    </span>
-
-                    <p>
-                        Reported engagement metric
-                    </p>
-
-                </div>
-
-                <div class="campaign-result">
-
-                    <strong>72%</strong>
-
-                    <span>
-                        Reported drop-off rate
-                    </span>
-
-                    <p>
-                        Not a verified calculator
-                        abandonment rate
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- ========================================
-                 BEHAVIOURAL INVESTIGATION
-            ======================================== -->
-
-            <h3>
-                Investigating potential friction
-            </h3>
-
-            <p>
-                Behavioural signals such as rage clicks
-                can indicate repeated attempts to interact
-                with page elements. However, they do
-                not independently establish the causes
-                of user difficulty.
-            </p>
-
-            <p>
-                I identified four questions to guide
-                further calculator-specific investigation:
-            </p>
-
-            <ol>
-
-                <li>
-                    Are users repeatedly interacting
-                    with unclear or unresponsive controls?
-                </li>
-
-                <li>
-                    Can users easily locate asset categories
-                    such as stocks, cryptocurrency,
-                    and foreign currency?
-                </li>
-
-                <li>
-                    Do users reach the calculation breakdown
-                    and donation action?
-                </li>
-
-                <li>
-                    Does potential friction differ
-                    between mobile and desktop users?
-                </li>
-
-            </ol>
-
-            <p>
-                Reviewing relevant heatmaps, recordings,
-                and calculator-specific interaction events
-                would help determine whether these
-                potential issues are present.
-            </p>
-
-            <p>
-                The two analytics sources covered different
-                reporting periods and measurement scopes,
-                so they were not combined into a single
-                historical conversion funnel.
-            </p>
 
 
             <!-- ========================================
