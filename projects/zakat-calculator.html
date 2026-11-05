@@ -9,10 +9,12 @@
 
     <meta
         name="description"
-        content="Human Appeal Canada Zakat Calculator — data-informed UX redesign, behavioural analytics, AI-assisted development and functional prototyping."
+        content="Human Appeal Canada Zakat Calculator — an analytics-informed UX redesign combining GA4, Hotjar, Figma, AI-assisted development and interactive prototyping."
     >
 
-    <title>Human Appeal Canada — Zakat Calculator Redesign | Urooj Syed</title>
+    <title>
+        Human Appeal Canada — Zakat Calculator Redesign | Urooj Syed
+    </title>
 
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -88,10 +90,11 @@
                 </h1>
 
                 <p class="article-lede">
-                    Using website analytics, UX research,
-                    and AI-assisted development to design
-                    and prototype a more transparent,
-                    streamlined Zakat Calculator.
+                    Using web analytics, behavioural research,
+                    UX design and AI-assisted development to
+                    transform a complex financial calculation
+                    into a more transparent, interactive
+                    digital experience.
                 </p>
 
                 <!-- PROJECT SKILLS & TOOLS -->
@@ -99,14 +102,16 @@
                 <div class="tag-row">
 
                     <span class="tag">Google Analytics 4</span>
-                    <span class="tag">Behavioural analytics</span>
+                    <span class="tag">Hotjar / Contentsquare</span>
                     <span class="tag">Data analysis</span>
-                    <span class="tag">UX/UI</span>
+                    <span class="tag">UX research</span>
+                    <span class="tag">Heatmap analysis</span>
                     <span class="tag">Figma</span>
-                    <span class="tag">Replit</span>
+                    <span class="tag">Replit AI</span>
                     <span class="tag">AI-assisted development</span>
                     <span class="tag">Functional prototyping</span>
                     <span class="tag">GitHub</span>
+                    <span class="tag">HTML / CSS / JavaScript</span>
 
                 </div>
 
@@ -120,7 +125,7 @@
             <img
                 class="article-hero"
                 src="../images/human_appeal_cover.jpeg"
-                alt="Human Appeal Canada — Zakat Calculator redesign"
+                alt="Human Appeal Canada — Zakat Calculator project visual"
                 data-fallback
             >
 
@@ -135,35 +140,45 @@
 
             <p>
                 Human Appeal Canada's Zakat Calculator
-                enables donors to estimate their annual
-                Zakat obligation using financial assets,
-                eligible liabilities, and Nisab thresholds.
+                helps donors estimate their annual
+                Zakat obligation using eligible
+                financial assets, liabilities
+                and Nisab thresholds.
             </p>
 
             <p>
-                The project aimed to improve the existing
-                experience through a more streamlined,
-                transparent, and intuitive interface.
-                A central objective was to reduce unnecessary
-                interactions while giving users greater
-                visibility into how their Zakat estimate
-                is calculated.
+                This project explored how a more
+                data-informed, human-centred approach
+                could improve the existing calculator.
+                The objective was to simplify the
+                process, make financial inputs easier
+                to understand and provide greater
+                visibility into how Zakat is calculated.
             </p>
 
             <p>
-                My approach combined quantitative website
-                analytics, behavioural analytics, UX evaluation,
-                functional requirements development, and
-                low-fidelity wireframing.
+                I combined Google Analytics 4 acquisition
+                data with Hotjar/Contentsquare behavioural
+                analytics to investigate how users
+                reached and interacted with the calculator.
+                These findings, alongside a UX review,
+                helped shape the redesign requirements.
             </p>
 
             <p>
-                I then used AI-assisted development tools
-                in Replit to translate my designs and
-                requirements into a functional prototype,
-                demonstrating how emerging technologies
-                can support the progression from research
-                and design to technical implementation.
+                I then created low-fidelity wireframes
+                in Figma and used Replit's AI-assisted
+                development capabilities to translate
+                the designs and functional specifications
+                into an interactive application.
+            </p>
+
+            <p>
+                The application was subsequently organized
+                into separate source files and published
+                as an interactive prototype through
+                GitHub Pages, with its source code
+                available for review.
             </p>
 
 
@@ -176,441 +191,621 @@
             </h2>
 
             <p>
-                Calculating Zakat requires users to understand
-                different asset categories, eligible deductions,
-                and the underlying calculation rules.
+                Calculating Zakat requires users to
+                consider multiple financial categories,
+                eligible liabilities and calculation
+                rules. The experience should make
+                that complexity manageable without
+                hiding the logic behind the result.
             </p>
 
             <p>
-                A multi-step calculator can make this process
-                more difficult when users must enter information
-                without seeing how it affects their estimate.
-                This creates the potential for an opaque,
-                or black-box, calculation experience.
+                A central concern with the existing
+                experience was the number of steps
+                involved in reaching an estimate.
+                When users must enter financial values
+                and then trigger a separate calculation,
+                they have limited visibility into
+                how their inputs affect the result
+                throughout the process.
             </p>
 
             <p>
-                The redesign focused on three opportunities:
+                This creates the potential for a
+                black-box experience: the user
+                supplies information but does not
+                continuously see how the calculated
+                amount is determined.
+            </p>
+
+            <p>
+                The redesign focused on three
+                interconnected objectives:
             </p>
 
             <ol>
 
                 <li>
-                    <strong>Efficiency:</strong>
-                    Reduce unnecessary steps and make
-                    relevant financial inputs easy to find.
+                    <strong>Reduce friction:</strong>
+                    Minimize unnecessary interactions
+                    and make financial categories
+                    more discoverable.
                 </li>
 
                 <li>
-                    <strong>Transparency:</strong>
-                    Display an updating estimate with
-                    explanations of the calculation.
+                    <strong>Improve transparency:</strong>
+                    Show a live estimate and explain
+                    how entered values contribute
+                    to Zakat owed.
                 </li>
 
                 <li>
-                    <strong>Trust and clarity:</strong>
-                    Help users understand their results
-                    before proceeding toward giving.
+                    <strong>Support informed giving:</strong>
+                    Clarify the calculation before
+                    users proceed to a donation.
                 </li>
 
             </ol>
 
             <p>
-                The intended outcome was a clearer donor
-                experience with less potential for friction.
-                The actual effect on user completion and
-                donation behaviour would require testing.
+                These objectives represented design
+                hypotheses to investigate and test,
+                rather than demonstrated improvements
+                in user completion or conversions.
             </p>
 
 
-           
-<!-- ========================================
-     02 — ANALYZING THE USER JOURNEY
-======================================== -->
-
-<h2>
-    02 / Analyzing the existing user journey
-</h2>
-
-<p>
-    To inform the redesign, I combined Google
-    Analytics 4 acquisition data with
-    Hotjar/Contentsquare behavioural analytics
-    for the existing Zakat Calculator.
-</p>
-
-<p>
-    Rather than examining traffic and engagement
-    as isolated metrics, I considered how users
-    arrived at the calculator, how they interacted
-    with the page, and where the experience
-    presented opportunities for improvement.
-</p>
-
-<p>
-    The objective was to establish a
-    data-informed rationale for simplifying
-    the calculation process and making
-    the user's financial information
-    easier to understand.
-</p>
-
-
-<!-- ========================================
-     ANALYTICS SOURCES
-======================================== -->
-
-<p class="note">
-    Data sources: Google Analytics 4
-    (January 1–October 29, 2026)
-    and Hotjar/Contentsquare
-    (January 1–March 31, 2026).
-    The reporting periods and measurement
-    definitions differ. Figures are
-    presented separately where necessary.
-</p>
-
-
-<!-- ========================================
-     KEY CALCULATOR METRICS
-======================================== -->
-
-<h3>
-    Key findings
-</h3>
-
-<div class="campaign-results">
-
-    <div class="campaign-result">
-
-        <strong>3,116</strong>
-
-        <span>
-            Calculator page views
-        </span>
-
-        <p>
-            Recorded in GA4 across
-            acquisition sources
-        </p>
-
-    </div>
-
-    <div class="campaign-result">
-
-        <strong>75.2%</strong>
-
-        <span>
-            Paid-search traffic share
-        </span>
-
-        <p>
-            2,344 page views from
-            paid search
-        </p>
-
-    </div>
-
-    <div class="campaign-result">
-
-        <strong>1.4k</strong>
-
-        <span>
-            Calculator page sessions
-        </span>
-
-        <p>
-            Filtered behavioural
-            analytics page overview
-        </p>
-
-    </div>
-
-    <div class="campaign-result">
-
-        <strong>118</strong>
-
-        <span>
-            Sessions with rage clicks
-        </span>
-
-        <p>
-            Potential interaction
-            friction requiring investigation
-        </p>
-
-    </div>
-
-    <div class="campaign-result">
-
-        <strong>67.9%</strong>
-
-        <span>
-            Average scroll depth
-        </span>
-
-        <p>
-            Behavioural analytics
-            page overview
-        </p>
-
-    </div>
-
-    <div class="campaign-result">
-
-        <strong>72%</strong>
-
-        <span>
-            Reported drop-off rate
-        </span>
-
-        <p>
-            Platform-defined measure,
-            not verified calculation
-            abandonment
-        </p>
-
-    </div>
-
-</div>
-
-
-<!-- ========================================
-     FINDING 1 — ACQUISITION
-======================================== -->
-
-<h3>
-    Finding 01 / Campaign-driven traffic
-</h3>
-
-<p>
-    GA4 showed that 75.2% of recorded
-    Zakat Calculator page views originated
-    from paid search,
-    representing 2,344 of 3,116 views.
-</p>
-
-<p>
-    This indicated that paid campaigns
-    were an important source of traffic
-    to the calculator.
-</p>
-
-<p>
-    As a result, the entry experience
-    became a key design consideration.
-    Visitors arriving through campaigns
-    should be able to identify relevant
-    financial inputs and begin a
-    calculation without unnecessary
-    navigation or decisions.
-</p>
-
-<p>
-    <strong>Design response:</strong>
-    Prioritize clearly visible asset
-    categories, simplified inputs,
-    and a live Zakat estimate.
-</p>
-
-
-<!-- ========================================
-     FINDING 2 — ENGAGEMENT
-======================================== -->
-
-<h3>
-    Finding 02 / User engagement and interaction
-</h3>
-
-<p>
-    The Hotjar/Contentsquare analytics dashboard for the calculator recorded approximately
-    1,400 sessions and 7,300 clicks,
-    with an average time on page
-    of 1 minute and 30 seconds.
-</p>
-
-<p>
-    Average scroll depth was 67.9%,
-    providing a measure of how far
-    users progressed vertically
-    through the page.
-</p>
-
-<p>
-    These metrics helped frame
-    questions about the discoverability
-    of financial inputs, supporting
-    explanations, and donation actions.
-</p>
-
-<p>
-    For example, if relevant controls
-    or explanations are positioned
-    too far down the page, some
-    visitors may not encounter
-    them during their session.
-    The scroll-depth average alone
-    does not establish whether
-    specific elements were seen.
-</p>
-
-<p>
-    <strong>Design response:</strong>
-    Improve the information hierarchy,
-    make important asset categories
-    easier to locate, and keep
-    the estimated Zakat amount
-    visible as inputs change.
-</p>
-
-
-<!-- ========================================
-     FINDING 3 — FRICTION
-======================================== -->
-
-<h3>
-    Finding 03 / Potential interaction friction
-</h3>
-
-<p>
-    Behavioural analytics recorded
-    118 sessions with rage clicks
-    and a reported drop-off rate
-    of 72% in the filtered
-    page overview.
-</p>
-
-<p>
-    Rage clicks involve repeated
-    interactions with an element
-    and may indicate confusion,
-    unresponsive controls,
-    or unmet user expectations.
-</p>
-
-<p>
-    These signals warranted closer
-    investigation of the calculator's
-    input controls and navigation.
-    They did not establish which
-    specific elements caused
-    frustration or why users left.
-</p>
-
-<p>
-    The reported drop-off rate
-    also required careful interpretation.
-    Without a confirmed calculation
-    completion event and the platform's
-    precise metric definition,
-    it cannot be treated as a
-    72% calculation abandonment rate.
-</p>
-
-<p>
-    <strong>Design response:</strong>
-    Reduce unnecessary interactions,
-    clarify input controls, provide
-    contextual explanations,
-    and make calculation feedback
-    more immediate.
-</p>
-
-
-
-<!-- ========================================
-     SYNTHESIS
-======================================== -->
-
-<h3>
-    Connecting the findings
-</h3>
-
-<p>
-    Considered together, the analytics
-    described a calculator attracting
-    substantial paid-search traffic,
-    while behavioural reporting
-    highlighted interaction patterns
-    and potential friction that
-    warranted further investigation.
-</p>
-
-<p>
-    This shaped the central redesign
-    hypothesis: making financial inputs
-    easier to discover, reducing
-    unnecessary steps, and providing
-    transparent real-time calculations
-    could help users complete
-    the process more confidently
-    and efficiently.
-</p>
-
-<p>
-    The resulting priorities were:
-</p>
-
-<ol>
-
-    <li>
-        <strong>Improve the entry experience:</strong>
-        Make common financial categories
-        immediately discoverable.
-    </li>
-
-    <li>
-        <strong>Reduce interaction friction:</strong>
-        Simplify controls and remove
-        avoidable decisions.
-    </li>
-
-    <li>
-        <strong>Increase transparency:</strong>
-        Show a continuously updating
-        estimate and explain
-        the calculation breakdown.
-    </li>
-
-    <li>
-        <strong>Strengthen measurement:</strong>
-        Track calculation starts,
-        completed estimates, and
-        donation progression to
-        evaluate the redesign.
-    </li>
-
-</ol>
-
-
-<!-- ========================================
-     ANALYTICAL LIMITATIONS
-======================================== -->
-
-<h3>
-    Analytical limitations
-</h3>
-
-
-<p>
-    The analysis did not establish a
-    complete historical conversion
-    funnel or a causal relationship
-    between specific interface
-    elements and user drop-off.
-</p>
-
-<p>
-    These limitations informed
-    the proposed event-tracking
-    and validation framework
-    developed later in the project.
-</p>
-
+            <!-- ========================================
+                 02 — DATA ANALYSIS
+            ======================================== -->
+
+            <h2>
+                02 / Analyzing the existing user journey
+            </h2>
+
+            <p>
+                I used two complementary analytics
+                platforms to investigate the existing
+                Zakat Calculator experience.
+            </p>
+
+            <p>
+                Google Analytics 4 provided acquisition
+                and traffic information, while
+                Hotjar/Contentsquare provided
+                behavioural measures and interaction
+                data from the calculator page.
+            </p>
+
+            <p>
+                Rather than treating the metrics as
+                isolated observations, I used them
+                to examine three questions:
+            </p>
+
+            <ol>
+
+                <li>
+                    How are visitors reaching
+                    the calculator?
+                </li>
+
+                <li>
+                    How are users interacting
+                    with the existing experience?
+                </li>
+
+                <li>
+                    Which parts of the interaction
+                    and calculation process should
+                    be prioritized for redesign?
+                </li>
+
+            </ol>
 
 
             <!-- ========================================
-                 03 — REDESIGN REQUIREMENTS
+                 DATA SOURCES
+            ======================================== -->
+
+            <p class="note">
+                Analytics sources: Google Analytics 4,
+                Pages and Screens export
+                (January 1–October 29, 2026);
+                Hotjar/Contentsquare engagement
+                dashboard (January 1–March 31, 2026);
+                and Hotjar desktop click heatmap
+                exported November 5, 2026,
+                covering the preceding 30 days.
+                Metrics are kept within their
+                original reporting scopes.
+            </p>
+
+
+            <!-- ========================================
+                 KEY ANALYTICS METRICS
+            ======================================== -->
+
+            <h3>
+                Key calculator analytics
+            </h3>
+
+            <div class="campaign-results">
+
+                <div class="campaign-result">
+
+                    <strong>3,116</strong>
+
+                    <span>
+                        Calculator page views
+                    </span>
+
+                    <p>
+                        GA4 acquisition export
+                    </p>
+
+                </div>
+
+                <div class="campaign-result">
+
+                    <strong>75.2%</strong>
+
+                    <span>
+                        Paid-search share
+                    </span>
+
+                    <p>
+                        2,344 views attributed
+                        to Google and Bing CPC
+                    </p>
+
+                </div>
+
+                <div class="campaign-result">
+
+                    <strong>1.4k</strong>
+
+                    <span>
+                        Calculator page sessions
+                    </span>
+
+                    <p>
+                        Hotjar/Contentsquare
+                        filtered page overview
+                    </p>
+
+                </div>
+
+                <div class="campaign-result">
+
+                    <strong>7.3k</strong>
+
+                    <span>
+                        Recorded click interactions
+                    </span>
+
+                    <p>
+                        Hotjar/Contentsquare
+                        page overview
+                    </p>
+
+                </div>
+
+                <div class="campaign-result">
+
+                    <strong>118</strong>
+
+                    <span>
+                        Sessions with rage clicks
+                    </span>
+
+                    <p>
+                        Potential interaction
+                        friction signal
+                    </p>
+
+                </div>
+
+                <div class="campaign-result">
+
+                    <strong>72%</strong>
+
+                    <span>
+                        Reported drop-off rate
+                    </span>
+
+                    <p>
+                        Platform-defined metric,
+                        not verified calculation
+                        abandonment
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================================
+                 FINDING 01 — ACQUISITION
+            ======================================== -->
+
+            <h3>
+                Finding 01 / Campaign-driven traffic
+            </h3>
+
+            <p>
+                GA4 showed that 75.2% of recorded
+                calculator page views originated
+                from Google and Bing paid search.
+                Together, these sources generated
+                2,344 of the 3,116 page views
+                in the supplied export.
+            </p>
+
+            <p>
+                This established paid search as
+                a significant acquisition channel
+                for the calculator and highlighted
+                the importance of a clear
+                entry experience.
+            </p>
+
+            <p>
+                Visitors arriving from campaigns
+                should be able to immediately
+                identify the calculator's purpose,
+                find relevant financial inputs
+                and begin a calculation.
+            </p>
+
+            <p>
+                <strong>Design implication:</strong>
+                Make asset categories visible
+                and reduce unnecessary decisions
+                at the beginning of the journey.
+            </p>
+
+
+            <!-- ========================================
+                 FINDING 02 — ENGAGEMENT
+            ======================================== -->
+
+            <h3>
+                Finding 02 / Engagement and content visibility
+            </h3>
+
+            <p>
+                The Hotjar/Contentsquare calculator
+                page overview recorded approximately
+                1,400 sessions and 7,300 clicks,
+                with an average time on page
+                of 1 minute and 30 seconds.
+            </p>
+
+            <p>
+                The average scroll depth was 67.9%.
+                This indicated how far users
+                progressed vertically through
+                the page on average, raising
+                questions about the visibility
+                of financial inputs, guidance
+                and donation actions.
+            </p>
+
+            <p>
+                Although an average scroll-depth
+                measure cannot establish whether
+                specific elements were seen,
+                it supported investigating
+                whether important information
+                should appear earlier
+                or remain visible throughout
+                the calculation.
+            </p>
+
+            <p>
+                <strong>Design implication:</strong>
+                Prioritize information hierarchy
+                and keep the evolving estimate
+                accessible while users enter
+                financial information.
+            </p>
+
+
+            <!-- ========================================
+                 FINDING 03 — FRICTION
+            ======================================== -->
+
+            <h3>
+                Finding 03 / Potential interaction friction
+            </h3>
+
+            <p>
+                Hotjar/Contentsquare recorded
+                118 sessions with rage clicks
+                and a reported drop-off rate
+                of 72% in the calculator
+                page overview.
+            </p>
+
+            <p>
+                Rage clicks are repeated interactions
+                that may indicate confusion,
+                unexpected behaviour or
+                unresponsive controls.
+            </p>
+
+            <p>
+                These signals provided reasons
+                to investigate the interaction
+                design more closely, but did
+                not establish the causes
+                of user frustration.
+            </p>
+
+            <p>
+                Similarly, the platform's
+                drop-off metric could not
+                be interpreted as a 72%
+                calculation abandonment rate
+                without the underlying event
+                definitions and completion data.
+            </p>
+
+            <p>
+                <strong>Design implication:</strong>
+                Simplify controls, provide
+                clearer explanations and
+                reduce avoidable interactions.
+            </p>
+
+
+            <!-- ========================================
+                 FINDING 04 — CLICK HEATMAP
+            ======================================== -->
+
+            <h3>
+                Finding 04 / Desktop click heatmap analysis
+            </h3>
+
+            <p>
+                To examine interactions in more detail,
+                I reviewed a Hotjar desktop click
+                heatmap export for the existing
+                Zakat Calculator.
+            </p>
+
+            <p class="note">
+                Source: Hotjar desktop click heatmap,
+                exported November 5, 2026.
+                Reporting window: preceding 30 days.
+                The exported sample contains
+                27 recorded clicks across
+                19 CSS selectors.
+            </p>
+
+            <div class="campaign-results">
+
+                <div class="campaign-result">
+
+                    <strong>27</strong>
+
+                    <span>
+                        Recorded desktop clicks
+                    </span>
+
+                    <p>
+                        Total interactions in
+                        the heatmap CSV
+                    </p>
+
+                </div>
+
+                <div class="campaign-result">
+
+                    <strong>44.4%</strong>
+
+                    <span>
+                        Financial input field clicks
+                    </span>
+
+                    <p>
+                        12 of 27 recorded clicks
+                    </p>
+
+                </div>
+
+                <div class="campaign-result">
+
+                    <strong>22.2%</strong>
+
+                    <span>
+                        Calculate button clicks
+                    </span>
+
+                    <p>
+                        6 of 27 recorded clicks
+                    </p>
+
+                </div>
+
+                <div class="campaign-result">
+
+                    <strong>7.4%</strong>
+
+                    <span>
+                        Donation link clicks
+                    </span>
+
+                    <p>
+                        2 of 27 recorded clicks
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ========================================
+                 HEATMAP INTERPRETATION
+            ======================================== -->
+
+            <h3>
+                Interpreting the click distribution
+            </h3>
+
+            <p>
+                The largest identifiable group
+                of interactions involved financial
+                input fields, accounting for
+                12 of the 27 recorded clicks.
+            </p>
+
+            <p>
+                This reinforced the importance
+                of making the calculator's
+                input structure intuitive.
+                Asset categories, field labels
+                and contextual guidance
+                should be easy to understand.
+            </p>
+
+            <p>
+                The explicit Calculate action
+                received six recorded clicks,
+                representing 22.2% of the
+                desktop heatmap sample.
+            </p>
+
+            <p>
+                This highlighted the existing
+                dependence on a separate
+                calculation action and informed
+                the decision to explore
+                a continuously updating estimate.
+            </p>
+
+            <p>
+                The donation link received
+                two recorded clicks, while
+                the Nisab selector received one.
+                These counts highlighted
+                interactions worth examining
+                in a fuller journey analysis.
+            </p>
+
+            <p>
+                However, click counts alone
+                cannot determine whether a
+                calculation was completed,
+                whether a user donated,
+                or whether a specific control
+                caused abandonment.
+            </p>
+
+            <p>
+                The heatmap sample was also
+                limited to desktop interactions.
+                Its distribution should not
+                be assumed to represent
+                mobile behaviour.
+            </p>
+
+
+            <!-- ========================================
+                 DATA SYNTHESIS
+            ======================================== -->
+
+            <h3>
+                Connecting the findings
+            </h3>
+
+            <p>
+                Taken together, the analytics
+                highlighted three important
+                aspects of the existing journey.
+            </p>
+
+            <ol>
+
+                <li>
+                    <strong>Acquisition:</strong>
+                    Paid search was a major
+                    source of calculator traffic,
+                    emphasizing the importance
+                    of a clear entry experience.
+                </li>
+
+                <li>
+                    <strong>Interaction:</strong>
+                    Behavioural analytics and
+                    the desktop heatmap highlighted
+                    financial inputs, calculation
+                    actions and potential friction
+                    as relevant areas of investigation.
+                </li>
+
+                <li>
+                    <strong>Measurement:</strong>
+                    The available reports did
+                    not provide a verified
+                    calculation-to-donation funnel,
+                    limiting conclusions about
+                    completion and conversion.
+                </li>
+
+            </ol>
+
+            <p>
+                The central redesign hypothesis
+                was that a more transparent
+                and streamlined experience
+                could reduce unnecessary effort
+                and support user understanding.
+            </p>
+
+            <p>
+                The analytics informed which
+                parts of the journey deserved
+                attention, while the UX review
+                and functional requirements
+                guided the specific solutions.
+            </p>
+
+
+            <!-- ========================================
+                 ANALYTICAL LIMITATIONS
+            ======================================== -->
+
+            <h3>
+                Analytical limitations
+            </h3>
+
+            <p>
+                The GA4 export, Q1 behavioural
+                dashboard and recent desktop
+                heatmap covered different
+                periods and measurement units.
+            </p>
+
+            <p>
+                Page views, sessions and clicks
+                were not treated as interchangeable
+                denominators or combined into
+                an artificial conversion rate.
+            </p>
+
+            <p>
+                The available evidence supported
+                redesign priorities and testable
+                hypotheses, but did not establish
+                causal relationships or post-redesign
+                performance improvements.
+            </p>
+
+
+            <!-- ========================================
+                 03 — DESIGN REQUIREMENTS
             ======================================== -->
 
             <h2>
@@ -618,150 +813,187 @@
             </h2>
 
             <p>
-                I organized the redesign requirements
-                around reducing interaction friction,
-                improving asset discoverability,
-                increasing calculation transparency,
-                and simplifying the giving process.
+                The analysis and UX review informed
+                a set of functional requirements
+                designed to improve efficiency,
+                calculation transparency,
+                asset discoverability
+                and clarity in giving.
             </p>
 
 
-            <!-- REDUCING FRICTION -->
+            <!-- ========================================
+                 REQUIREMENT 01 — LIVE ESTIMATE
+            ======================================== -->
 
             <h3>
-                Reducing unnecessary steps
+                A continuously updating estimate
+            </h3>
+
+            <p>
+                Rather than requiring users to
+                complete every entry and trigger
+                a separate calculation before
+                viewing a result, the proposed
+                calculator would update the
+                estimated amount as inputs change.
+            </p>
+
+            <p>
+                The live summary would communicate
+                listed wealth, relevant liabilities,
+                the amount used for Zakat, the
+                applied 2.5% rate and the selected
+                Nisab threshold.
+            </p>
+
+            <p>
+                This requirement was intended
+                to reduce unnecessary interactions
+                and make the calculation process
+                more interpretable.
+            </p>
+
+
+            <!-- ========================================
+                 REQUIREMENT 02 — FINANCIAL INPUTS
+            ======================================== -->
+
+            <h3>
+                Clearer financial inputs
             </h3>
 
             <ol>
 
                 <li>
-                    Introduce a live Zakat estimate
-                    that updates as financial inputs change.
+                    Use CAD as the default
+                    calculation and reporting currency.
                 </li>
 
                 <li>
-                    Use CAD as the default calculation
-                    and reporting currency.
+                    Provide structured account-type
+                    dropdowns with an Other option.
                 </li>
 
                 <li>
-                    Replace free-text account type entry
-                    with a dropdown including an
-                    Other option.
-                </li>
-
-                <li>
-                    Remove the separate lunar-year
-                    confirmation step in the proposed
-                    experience, subject to validation
-                    of the eligibility assumptions.
-                </li>
-
-            </ol>
-
-
-            <!-- ASSET DISCOVERABILITY -->
-
-            <h3>
-                Improving asset discoverability
-            </h3>
-
-            <ol>
-
-                <li>
-                    Provide visible entry points for
-                    stocks and cryptocurrency.
+                    Make stocks and cryptocurrency
+                    clearly visible as asset categories.
                 </li>
 
                 <li>
                     Include a dedicated foreign-currency
-                    entry area while retaining CAD totals.
+                    input area while maintaining
+                    CAD-based totals.
                 </li>
 
                 <li>
-                    Group related assets and liabilities
-                    into clearly identified categories.
+                    Group related financial assets
+                    and liabilities into recognizable
+                    categories.
                 </li>
 
                 <li>
-                    Introduce information tooltips
-                    with supporting video explanations
-                    for individual input categories.
+                    Provide contextual explanations
+                    and educational video guidance
+                    where relevant.
                 </li>
 
             </ol>
 
 
-            <!-- CALCULATION TRANSPARENCY -->
+            <!-- ========================================
+                 REQUIREMENT 03 — CALCULATION RULES
+            ======================================== -->
 
             <h3>
-                Increasing calculation transparency
+                Transparent calculation logic
             </h3>
 
             <ol>
 
                 <li>
-                    Display an updating summary
-                    of entered assets and liabilities.
+                    Clearly explain how eligible
+                    wealth is determined.
                 </li>
 
                 <li>
-                    Explain how eligible wealth
-                    is determined from the entered values.
+                    Display the 2.5% calculation
+                    and the basis used to derive
+                    the estimated obligation.
                 </li>
 
                 <li>
-                    Show how the 2.5% Zakat rate
-                    is applied to the relevant amount.
-                </li>
-
-                <li>
-                    Identify the selected Nisab threshold
-                    and explain its role in the calculation.
+                    Identify the applicable
+                    Nisab threshold.
                 </li>
 
                 <li>
                     Explore automatic Silver Nisab
-                    selection below the Gold threshold,
-                    subject to verification of the
-                    applicable calculation methodology.
+                    selection when eligible wealth
+                    falls below the Gold threshold.
+                </li>
+
+                <li>
+                    Simplify the lunar-year
+                    question through an assumed
+                    eligibility condition in the
+                    proposed experience.
                 </li>
 
             </ol>
 
+            <p>
+                Nisab selection and lunar-year
+                assumptions would require
+                subject-matter validation
+                before production use.
+            </p>
 
-            <!-- GIVING EXPERIENCE -->
+
+            <!-- ========================================
+                 REQUIREMENT 04 — INTEREST
+            ======================================== -->
 
             <h3>
-                Clarifying the giving experience
+                Separate interest-related giving
             </h3>
+
+            <p>
+                The calculator also needed
+                to distinguish between Zakat
+                owed and interest received
+                that a user intends
+                to set aside for donation.
+            </p>
 
             <ol>
 
                 <li>
-                    Record interest received separately
-                    from the amount used to calculate Zakat.
+                    Track interest received
+                    separately from Zakat.
                 </li>
 
                 <li>
-                    Exclude interest received from
-                    the Zakat calculation.
+                    Exclude interest received
+                    from the Zakat calculation.
                 </li>
 
                 <li>
-                    Provide a separate donation action
-                    when a positive interest amount
+                    Explain this separation
+                    through contextual guidance.
+                </li>
+
+                <li>
+                    Provide a separate
+                    interest-related action
+                    when a positive amount
                     is entered.
                 </li>
 
                 <li>
-                    Present Zakat and interest donation
-                    amounts separately in the final review.
-                </li>
-
-                <li>
-                    Preserve Human Appeal Canada's branding
-                    and website navigation.
+                    Display the separate
+                    amount in the final
+                    giving review.
                 </li>
 
             </ol>
@@ -776,126 +1008,151 @@
             </h2>
 
             <p>
-                To connect analysis with implementation,
-                I mapped the available evidence and
-                project requirements to specific design
-                decisions and future evaluation metrics.
+                To connect the analysis with the
+                proposed experience, I mapped
+                the key findings and usability
+                requirements to design responses
+                and measurable outcomes.
             </p>
 
 
             <!-- ACQUISITION -->
 
             <h3>
-                Acquisition data → Clearer entry experience
+                Acquisition → Immediate clarity
             </h3>
 
             <p>
                 <strong>Evidence:</strong>
-                Paid search accounted for 75.2% of
-                recorded calculator page views.
+                75.2% of page views in the
+                supplied GA4 export originated
+                from Google and Bing paid search.
             </p>
 
             <p>
                 <strong>Design response:</strong>
-                Make relevant asset inputs immediately
-                visible and provide a clear starting point.
+                Prioritize a clear starting
+                point with visible financial
+                categories and immediate feedback.
             </p>
 
             <p>
                 <strong>Evaluation:</strong>
-                Measure calculator start rates by
-                acquisition channel.
+                Compare calculator start rates
+                across acquisition channels.
             </p>
 
 
-            <!-- BEHAVIOURAL FRICTION -->
+            <!-- FINANCIAL INPUTS -->
 
             <h3>
-                Behavioural questions → Simplified interactions
+                Input interactions → Better discoverability
             </h3>
 
             <p>
                 <strong>Evidence:</strong>
-                Behavioural analytics identified interaction
-                signals that warranted further investigation.
+                Financial input fields accounted
+                for 12 of 27 clicks in
+                the desktop heatmap sample.
             </p>
 
             <p>
                 <strong>Design response:</strong>
-                Reduce unnecessary steps and clarify
-                input controls and navigation.
+                Use recognizable input categories,
+                structured controls and
+                contextual explanations.
             </p>
 
             <p>
                 <strong>Evaluation:</strong>
-                Compare task completion, time to estimate,
-                and input error rates.
+                Measure input error rates,
+                asset discovery success
+                and task completion.
             </p>
 
 
-            <!-- CALCULATION TRANSPARENCY -->
+            <!-- CALCULATE BUTTON -->
 
             <h3>
-                UX requirements → Transparent calculations
-            </h3>
-
-            <p>
-                <strong>Problem:</strong>
-                The calculation process needed to provide
-                greater visibility into how entered
-                financial values affect the estimate.
-            </p>
-
-            <p>
-                <strong>Design response:</strong>
-                Introduce a live estimate and an
-                expandable calculation breakdown.
-            </p>
-
-            <p>
-                <strong>Evaluation:</strong>
-                Test whether users can correctly
-                explain how their Zakat was calculated.
-            </p>
-
-
-            <!-- MEASUREMENT GAP -->
-
-            <h3>
-                Analytics limitations → Event-level measurement
+                Calculation action → Real-time feedback
             </h3>
 
             <p>
                 <strong>Evidence:</strong>
-                The available GA4 export did not establish
-                calculation completion or donation progression.
+                The Calculate button received
+                six recorded clicks in
+                the desktop heatmap.
             </p>
 
             <p>
                 <strong>Design response:</strong>
-                Define a calculator-specific conversion
-                funnel and interaction event taxonomy.
+                Explore a live estimate that
+                updates during financial entry,
+                rather than relying entirely
+                on a separate calculation action.
             </p>
 
             <p>
                 <strong>Evaluation:</strong>
-                Assess event coverage, completion rate,
-                and donation progression after implementation.
+                Compare time to estimate,
+                task success and user
+                comprehension.
+            </p>
+
+
+            <!-- DONATION PROGRESSION -->
+
+            <h3>
+                Giving journey → Measurable progression
+            </h3>
+
+            <p>
+                <strong>Evidence:</strong>
+                The desktop heatmap recorded
+                two donation-link clicks,
+                while the historical reports
+                did not establish complete
+                calculation-to-donation progression.
+            </p>
+
+            <p>
+                <strong>Design response:</strong>
+                Make the review and giving
+                transition clearer, with
+                a proposed event-tracking
+                framework for future evaluation.
+            </p>
+
+            <p>
+                <strong>Evaluation:</strong>
+                Track calculation completion,
+                donation initiation and,
+                where attributable, verified
+                donation completion.
             </p>
 
 
             <!-- ========================================
-                 05 — DESIGN & PROTOTYPING
+                 05 — DESIGN & DEVELOPMENT
             ======================================== -->
 
             <h2>
-                05 / From wireframes to functional prototyping
+                05 / From wireframes to a functional prototype
             </h2>
 
             <p>
-                The redesign progressed from functional
-                requirements and low-fidelity wireframes
-                to an interactive application prototype.
+                The project progressed beyond
+                requirements and UX concepts
+                into an interactive application.
+            </p>
+
+            <p>
+                I used Figma to establish the
+                proposed information hierarchy
+                and Replit's AI-assisted
+                development tools to translate
+                those designs into a functional
+                calculator prototype.
             </p>
 
 
@@ -908,18 +1165,25 @@
             </h3>
 
             <p>
-                I developed low-fidelity wireframes
-                in Figma to explore the calculator's
-                information hierarchy, financial
-                input structure, and live estimate.
+                I developed low-fidelity
+                Figma wireframes exploring
+                the calculator's financial
+                input structure, information
+                organization and calculation
+                feedback.
             </p>
 
             <p>
-                The designs emphasized clearer asset
-                categories, contextual guidance,
-                calculation visibility, and a more
-                intuitive donor journey.
+                The wireframes served as
+                visual references for
+                the functional prototype
+                and helped communicate
+                the intended experience
+                during development.
             </p>
+
+
+            <!-- FIGMA EMBED -->
 
             <div class="figma-project">
 
@@ -930,7 +1194,7 @@
                 <div class="figma-embed">
 
                     <iframe
-                        title="Human Appeal Canada Zakat Calculator — Figma wireframes"
+                        title="Human Appeal Canada — Zakat Calculator Figma wireframes"
                         src="https://embed.figma.com/design/ulm6wZM2abgkteejVRIZYl/Zakat-Calculator?node-id=0-1&amp;embed-host=share"
                         loading="lazy"
                         allowfullscreen
@@ -950,84 +1214,202 @@
             </h3>
 
             <p>
-                I used Replit's AI-assisted development
-                capabilities to translate the Figma
-                wireframes and functional requirements
-                into a working calculator prototype.
+                I used Replit's AI-assisted
+                development capabilities by
+                providing my Figma wireframes,
+                functional requirements and
+                calculation specifications
+                as inputs to the development
+                process.
             </p>
 
             <p>
-                This involved providing visual references,
-                specifying calculation behaviour,
-                defining financial input requirements,
-                and iteratively refining the generated
-                application.
+                Rather than starting with
+                a complete manually coded
+                application, I used structured
+                instructions and iterative
+                refinement to guide the
+                generation of the calculator's
+                interface and application logic.
             </p>
 
             <p>
-                The process allowed me to move beyond
-                static UX designs and explore the
-                implementation of real-time calculations
-                and interactive financial inputs.
+                The process involved four
+                connected activities:
             </p>
 
             <ol>
 
                 <li>
-                    <strong>Requirements engineering:</strong>
-                    Translate financial and UX requirements
-                    into structured technical instructions.
+                    <strong>Design translation:</strong>
+                    Feed the wireframes into
+                    the AI-assisted environment
+                    to communicate layout,
+                    structure and interactions.
                 </li>
 
                 <li>
-                    <strong>AI-assisted implementation:</strong>
-                    Use Replit to generate and refine
-                    the calculator application.
+                    <strong>Requirements specification:</strong>
+                    Describe the financial input
+                    categories, calculation
+                    behaviour, transparency
+                    requirements and giving flow.
                 </li>
 
                 <li>
-                    <strong>Iterative evaluation:</strong>
-                    Review the generated interface and
-                    behaviour against the design requirements.
+                    <strong>Iterative development:</strong>
+                    Review the generated interface
+                    and refine the implementation
+                    using additional instructions.
                 </li>
 
                 <li>
                     <strong>Functional prototyping:</strong>
-                    Produce an interactive demonstration
-                    of the proposed user experience.
+                    Develop an interactive
+                    demonstration of the proposed
+                    calculator experience.
                 </li>
 
             </ol>
 
             <p>
-                This demonstrated my ability to adopt
-                emerging AI development tools, communicate
-                technical requirements, and connect
-                UX design with functional implementation.
+                This workflow demonstrated my
+                ability to adopt emerging AI
+                development tools, communicate
+                technical requirements and
+                bridge UX design with
+                application implementation.
             </p>
 
             <p>
-                AI-generated functionality still requires
-                validation, particularly for calculations
-                involving financial and religious rules.
+                The process also highlighted
+                the importance of evaluating
+                AI-generated functionality
+                rather than assuming that
+                generated code is correct.
             </p>
 
 
             <!-- ========================================
-                 INTERACTIVE REPLIT PROTOTYPE
+                 PROTOTYPE REQUIREMENTS
             ======================================== -->
+
+            <h3>
+                Functional prototype requirements
+            </h3>
+
+            <p>
+                The functional prototype was
+                developed around the following
+                requirements and interaction
+                goals.
+            </p>
+
+            <ol>
+
+                <li>
+                    <strong>Dynamic calculation:</strong>
+                    Support interactive financial
+                    entry and updating Zakat estimates.
+                </li>
+
+                <li>
+                    <strong>Asset handling:</strong>
+                    Provide structured ways to enter
+                    savings, investments and
+                    other relevant asset categories.
+                </li>
+
+                <li>
+                    <strong>Calculation breakdown:</strong>
+                    Make the estimated obligation
+                    and its calculation basis
+                    understandable.
+                </li>
+
+                <li>
+                    <strong>Nisab guidance:</strong>
+                    Communicate the applicable
+                    threshold and support
+                    the proposed selection logic.
+                </li>
+
+                <li>
+                    <strong>Separate interest treatment:</strong>
+                    Distinguish interest-related
+                    giving from Zakat owed.
+                </li>
+
+                <li>
+                    <strong>Responsive interaction:</strong>
+                    Support use across desktop
+                    and mobile screen sizes.
+                </li>
+
+                <li>
+                    <strong>Design consistency:</strong>
+                    Translate the wireframes into
+                    an interface visually aligned
+                    with Human Appeal Canada.
+                </li>
+
+                <li>
+                    <strong>Review and donation:</strong>
+                    Present the result clearly
+                    and provide a path toward
+                    the giving process.
+                </li>
+
+            </ol>
+
+            <p>
+                These requirements document the
+                intended functionality of the
+                prototype. They should not
+                be interpreted as a completed
+                independent verification of
+                every calculation scenario.
+            </p>
+
+
+            <!-- ========================================
+                 INTERACTIVE GITHUB PAGES PROTOTYPE
+            ======================================== -->
+
+            <h3>
+                Interactive Zakat Calculator prototype
+            </h3>
+
+            <p>
+                Following the initial AI-assisted
+                development process, I organized
+                the application files into
+                separate source components
+                for an independently hosted
+                interactive prototype.
+            </p>
+
+            <p>
+                The version below is hosted
+                through GitHub Pages and
+                demonstrates the proposed
+                calculator experience.
+            </p>
+
+
+            <!-- LIVE PROTOTYPE EMBED -->
 
             <div class="figma-project">
 
                 <h3>
-                    Interactive Zakat Calculator prototype
+                    Functional Zakat Calculator
                 </h3>
 
                 <div class="figma-embed">
 
                     <iframe
                         title="Human Appeal Canada — Interactive Zakat Calculator prototype"
-                        src="https://human-appeal-zakat-calculator-redesign--uroojhac.replit.app"
+                        src="https://uroojsyed.github.io/zakat-calculator/"
                         loading="lazy"
                         allowfullscreen
                     ></iframe>
@@ -1036,13 +1418,17 @@
 
             </div>
 
+
+            <!-- PROTOTYPE NOTICE -->
+
             <p class="note">
-                AI-assisted functional prototype.
-                This is a demonstration application,
-                not Human Appeal Canada's production
-                calculator. Its financial and religious
-                calculation rules have not been
-                independently validated.
+                Interactive demonstration developed
+                through an AI-assisted prototyping
+                workflow and published via GitHub Pages.
+                This is not Human Appeal Canada's
+                production calculator. Financial
+                and religious calculation rules
+                require independent validation.
             </p>
 
 
@@ -1054,11 +1440,11 @@
 
                 <a
                     class="btn"
-                    href="https://human-appeal-zakat-calculator-redesign--uroojhac.replit.app"
+                    href="https://uroojsyed.github.io/zakat-calculator/"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Open functional prototype ↗
+                    Open interactive prototype ↗
                 </a>
 
                 <a
@@ -1074,7 +1460,49 @@
 
 
             <!-- ========================================
-                 06 — MEASUREMENT FRAMEWORK
+                 TECHNICAL IMPLEMENTATION
+            ======================================== -->
+
+            <h3>
+                Technical implementation &amp; learning
+            </h3>
+
+            <p>
+                The development process connected
+                visual design, structured
+                requirements, AI-assisted coding
+                and interactive prototyping.
+            </p>
+
+            <p>
+                Separating the application into
+                source files also made the
+                implementation easier to inspect
+                and maintain outside the initial
+                AI development environment.
+            </p>
+
+            <p>
+                Sharing the prototype alongside
+                the GitHub repository allows
+                visitors to explore both
+                the interface and the
+                underlying implementation.
+            </p>
+
+            <p>
+                This project demonstrates
+                practical AI tool proficiency,
+                technical adaptability,
+                requirements engineering
+                and an understanding of how
+                user interfaces connect
+                with application logic.
+            </p>
+
+
+            <!-- ========================================
+                 06 — MEASURING SUCCESS
             ======================================== -->
 
             <h2>
@@ -1082,117 +1510,122 @@
             </h2>
 
             <p>
-                An important analytical limitation
-                was the absence of a complete
-                calculator journey in the
-                available historical reports.
+                The available analytics helped
+                identify areas for redesign
+                but did not provide a complete
+                picture of the calculation
+                and giving journey.
             </p>
 
             <p>
-                I therefore proposed a measurement
-                framework that could evaluate
-                calculator engagement, completion,
-                and donation progression after
-                implementation.
+                To address that gap, I proposed
+                a measurement framework for
+                evaluating how visitors interact
+                with a redesigned calculator.
             </p>
 
 
             <!-- ========================================
-                 PROPOSED CONVERSION FUNNEL
+                 CONVERSION FUNNEL
             ======================================== -->
 
             <h3>
-                Proposed conversion funnel
+                Proposed calculator conversion funnel
             </h3>
 
             <ol>
 
                 <li>
                     <strong>Calculator viewed:</strong>
-                    A user enters the calculator page.
+                    A visitor arrives at
+                    the calculator page.
                 </li>
 
                 <li>
                     <strong>Calculation started:</strong>
-                    The user begins entering
-                    financial information.
+                    The visitor begins
+                    entering financial information.
                 </li>
 
                 <li>
                     <strong>Estimate reviewed:</strong>
-                    A valid calculation reaches
-                    the review stage.
+                    The visitor reaches a
+                    valid, reviewable estimate.
                 </li>
 
                 <li>
                     <strong>Donation initiated:</strong>
-                    The user proceeds to the
-                    donation journey.
+                    The visitor proceeds
+                    toward the donation flow.
                 </li>
 
                 <li>
                     <strong>Donation completed:</strong>
-                    A verified donation is completed
-                    and, where possible, attributed
-                    to the calculator journey.
+                    A donation is verified
+                    and reliably attributed
+                    to the calculator journey,
+                    where possible.
                 </li>
 
             </ol>
 
             <p class="note">
-                Proposed funnel only. Historical
-                counts for the individual stages
-                were not available in the
-                reviewed analytics reports.
+                Proposed measurement model.
+                The available historical reports
+                do not contain complete counts
+                for each funnel stage.
             </p>
 
 
             <!-- ========================================
-                 PERFORMANCE METRICS
+                 PERFORMANCE INDICATORS
             ======================================== -->
 
             <h3>
-                Proposed performance indicators
+                Defining performance indicators
             </h3>
 
             <ol>
 
                 <li>
                     <strong>Calculator start rate:</strong>
-                    Sessions containing a calculation
-                    start divided by calculator page sessions.
+                    Sessions with a calculation
+                    start divided by calculator
+                    page sessions.
                 </li>
 
                 <li>
                     <strong>Calculation completion rate:</strong>
-                    Valid completed estimates divided
-                    by started calculations.
+                    Valid completed estimates
+                    divided by started calculations.
                 </li>
 
                 <li>
                     <strong>Step abandonment rate:</strong>
-                    The share of journeys that do not
-                    progress to the next defined stage.
+                    The proportion of journeys
+                    that do not progress to
+                    the next defined funnel stage.
                 </li>
 
                 <li>
                     <strong>Median time to estimate:</strong>
-                    The median elapsed time between
-                    calculation start and valid review.
+                    Median elapsed time between
+                    beginning a calculation
+                    and reviewing a valid result.
                 </li>
 
                 <li>
                     <strong>Donation progression rate:</strong>
-                    Completed calculations followed by
-                    donation initiation divided by
-                    completed calculations.
+                    Completed calculations followed
+                    by donation initiation divided
+                    by completed calculations.
                 </li>
 
                 <li>
-                    <strong>Help interaction rate:</strong>
-                    Calculator sessions with explanatory
-                    content interactions divided by
-                    calculator sessions.
+                    <strong>Input error rate:</strong>
+                    Frequency of defined input
+                    validation errors relative
+                    to relevant input attempts.
                 </li>
 
             </ol>
@@ -1207,47 +1640,54 @@
             </h3>
 
             <p>
-                Calculator-specific events would provide
-                more useful information about user
-                progression than page views alone.
+                A more detailed event taxonomy
+                would support analysis of
+                interaction patterns and
+                progression through the
+                calculation experience.
             </p>
 
             <ol>
 
                 <li>
                     <code>calculator_start</code>
-                    — first meaningful interaction.
+                    — first meaningful
+                    calculation interaction.
                 </li>
 
                 <li>
                     <code>asset_category_selected</code>
-                    — selection of a predefined
-                    financial category.
+                    — predefined asset
+                    category selection.
                 </li>
 
                 <li>
                     <code>calculator_help_opened</code>
-                    — interaction with explanatory content.
+                    — interaction with
+                    explanatory content.
                 </li>
 
                 <li>
                     <code>calculation_error_displayed</code>
-                    — predefined validation error category.
+                    — predefined validation
+                    error category.
                 </li>
 
                 <li>
                     <code>calculation_review_viewed</code>
-                    — valid calculation reviewed.
+                    — valid calculation
+                    reaches the review stage.
                 </li>
 
                 <li>
                     <code>donation_flow_started</code>
-                    — user continues toward giving.
+                    — user proceeds
+                    toward giving.
                 </li>
 
                 <li>
                     <code>donation_completed</code>
-                    — verified donation completion,
+                    — verified donation
                     where reliable attribution
                     and consent permit.
                 </li>
@@ -1255,9 +1695,11 @@
             </ol>
 
             <p>
-                Events would need clearly defined
-                triggering conditions and validation
-                before being used for reporting.
+                Events would require clear
+                triggering definitions,
+                implementation testing
+                and validation before
+                supporting reliable reporting.
             </p>
 
 
@@ -1271,7 +1713,7 @@
 
             <p>
                 The proposed evaluation framework
-                connects each design objective
+                connected each UX objective
                 with a measurable outcome.
             </p>
 
@@ -1279,41 +1721,57 @@
 
                 <li>
                     <strong>Efficiency:</strong>
-                    Reduce median time to estimate
+                    Reduce the median time
+                    required to produce
+                    a valid estimate
                     without compromising accuracy.
                 </li>
 
                 <li>
                     <strong>Completion:</strong>
-                    Increase the calculation
-                    completion rate.
+                    Increase the percentage
+                    of started calculations
+                    reaching a valid review.
                 </li>
 
                 <li>
                     <strong>Transparency:</strong>
-                    Improve users' ability to
-                    explain their calculated result.
+                    Improve users' ability
+                    to explain how their
+                    calculated result
+                    was determined.
                 </li>
 
                 <li>
                     <strong>Input clarity:</strong>
-                    Reduce input errors and
-                    increase task success.
+                    Reduce validation errors
+                    and improve success
+                    when identifying
+                    relevant asset categories.
                 </li>
 
                 <li>
                     <strong>Donation progression:</strong>
-                    Increase progression from a
-                    completed estimate to giving.
+                    Increase the proportion
+                    of completed calculations
+                    that proceed toward giving.
                 </li>
 
                 <li>
                     <strong>Measurement quality:</strong>
-                    Establish reliable tracking
-                    across the defined funnel.
+                    Establish reliable event
+                    coverage across the
+                    calculator journey.
                 </li>
 
             </ol>
+
+            <p>
+                No specific improvement
+                percentages were assigned
+                without an appropriate
+                baseline and validation plan.
+            </p>
 
 
             <!-- ========================================
@@ -1326,18 +1784,25 @@
 
             <p>
                 Because the calculator handles
-                financial information, analytics
-                should measure interactions
-                without capturing individual
-                asset balances, interest amounts,
-                or personally identifiable data.
+                sensitive financial information,
+                the proposed tracking focuses
+                on interactions rather
+                than entered financial values.
             </p>
 
             <p>
-                Reporting should use appropriately
-                aggregated information and follow
-                applicable consent and privacy
-                requirements.
+                Analytics should not collect
+                individual balances,
+                interest amounts, asset values
+                or personally identifiable
+                information.
+            </p>
+
+            <p>
+                Reporting should use
+                approved aggregate information
+                and respect applicable
+                privacy and consent requirements.
             </p>
 
 
@@ -1350,49 +1815,67 @@
             </h2>
 
             <p>
-                Before implementation, the functional
-                prototype would require further
-                usability, accessibility, and
-                calculation validation.
+                The functional prototype provides
+                a foundation for exploring
+                the redesigned experience,
+                but further validation would
+                be necessary before production use.
             </p>
 
             <ol>
 
                 <li>
-                    Test whether users can find
-                    relevant asset categories
-                    and complete realistic tasks.
+                    <strong>Usability testing:</strong>
+                    Evaluate whether visitors
+                    can locate asset categories
+                    and complete realistic
+                    calculation tasks.
                 </li>
 
                 <li>
-                    Evaluate whether the live estimate
-                    and breakdown improve understanding.
+                    <strong>Calculation validation:</strong>
+                    Test financial scenarios
+                    against independently
+                    established expected results.
                 </li>
 
                 <li>
-                    Test calculation logic using
-                    predefined fictional financial
-                    scenarios and expected results.
+                    <strong>Subject-matter review:</strong>
+                    Validate Nisab selection,
+                    lunar-year assumptions,
+                    foreign currency and
+                    eligible asset treatment.
                 </li>
 
                 <li>
-                    Verify Nisab thresholds, eligibility
-                    assumptions, foreign-currency handling,
-                    and other calculation rules
-                    with appropriate subject-matter reviewers.
+                    <strong>Responsive evaluation:</strong>
+                    Test desktop and mobile
+                    interactions, especially
+                    financial inputs and
+                    estimate visibility.
                 </li>
 
                 <li>
-                    Review keyboard accessibility,
-                    form labels, tooltip behaviour,
-                    and error announcements.
+                    <strong>Accessibility review:</strong>
+                    Assess keyboard navigation,
+                    screen-reader feedback,
+                    form labels, tooltips
+                    and validation messages.
                 </li>
 
                 <li>
-                    Validate event tracking before
-                    implementation and compare
-                    performance using appropriately
-                    controlled reporting periods.
+                    <strong>Analytics validation:</strong>
+                    Verify event definitions
+                    and instrument the proposed
+                    funnel before launch.
+                </li>
+
+                <li>
+                    <strong>Post-implementation analysis:</strong>
+                    Evaluate completion,
+                    time to estimate
+                    and donation progression
+                    using comparable data.
                 </li>
 
             </ol>
@@ -1407,53 +1890,61 @@
             </h2>
 
             <p>
-                The project progressed from quantitative
-                analytics and UX requirements development
-                to low-fidelity wireframes and
-                an interactive calculator prototype.
+                The project progressed from
+                data analysis and UX requirements
+                development to Figma wireframes
+                and a functional interactive
+                calculator prototype.
             </p>
 
             <p>
-                I combined GA4 acquisition analysis,
-                behavioural analytics, and usability
-                considerations to identify opportunities
-                for simplifying the calculation process
-                and improving transparency.
+                I combined GA4 acquisition data,
+                Hotjar/Contentsquare engagement
+                measures and desktop heatmap
+                interactions to identify
+                opportunities for improving
+                calculation clarity and
+                reducing potential friction.
             </p>
 
             <p>
-                Using AI-assisted development through
-                Replit, I translated wireframes and
-                functional specifications into a working
-                demonstration of the proposed experience.
-                The implementation is also documented
-                through the project's GitHub repository.
+                Using AI-assisted development
+                through Replit, I translated
+                the wireframes and requirements
+                into a working application.
+                The source files were subsequently
+                organized for independent
+                publication through GitHub Pages.
             </p>
 
             <p>
-                I also developed a proposed measurement
-                framework covering conversion funnels,
-                interaction events, success criteria,
+                I also developed a proposed
+                measurement framework covering
+                calculator progression, event
+                tracking, usability indicators
                 and privacy-conscious evaluation.
             </p>
 
             <p>
-                Together, these deliverables demonstrate
-                a multidisciplinary workflow connecting
-                data analysis, UX design, requirements
-                engineering, AI-assisted development,
-                and performance evaluation.
+                The project demonstrates
+                a multidisciplinary workflow
+                connecting analytics,
+                UX design, technical
+                requirements, AI-assisted
+                implementation and
+                evaluation planning.
             </p>
 
             <p class="note">
                 Project status: Analytics review,
-                requirements development, Figma
-                wireframes, and functional prototype.
-                The redesigned calculator is not
-                presented as a production launch.
+                UX requirements, Figma wireframes
+                and an interactive functional
+                prototype. The redesign is not
+                presented as Human Appeal Canada's
+                production implementation.
                 Independent calculation validation
-                and post-launch performance assessment
-                remain future work.
+                and post-launch performance
+                evaluation remain future work.
             </p>
 
 
